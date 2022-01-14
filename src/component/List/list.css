@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+
+.List-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-item{
+    width: 30%;
+    /* border: 2px solid red; */
+}
+
+.list-btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    width: 40%;
+    height: 40px;
+    font-size: 17px;
+    margin-left: 10%;
+    border: none;
+    border-bottom: 2px solid green;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 3px 6px black;
+}
+
+.list-btn:focus{
+    background-color: rgb(122, 255, 122);
+}
+
+.list-btn:hover{
+    cursor: pointer;
+    background-color: rgb(184, 255, 184);
+    color: black;
+}
+
+.list-option-btn{
+    margin-left: 60%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    height: 28pc;
+    overflow: auto;
+    position: absolute;
+    top: 25%;
+    width: 38%;
+    /* margin-top: -33.5%; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 3px 6px black;
+}
+
+.list-button{
+    /* width: 40%; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: 85%;
+    margin-left: 30px;
+    font-size: 19px;
+    padding: 12px 12px;
+    border: none;
+    border-left: 2px solid rgb(43, 43, 124);
+    border-bottom: 2px solid rgb(43, 43, 124);
+}
+
+.list-button:hover{
+    cursor: pointer;
+    background-color: rgb(107, 107, 255);
+    color: white;
+}
+
+.list-link{
+    display: flex;
+    /* border: 2px solid black; */
+    margin-left: 85%;
+    margin-top: -130px;
+    
+}
+
+.notes-head{
+    border: 2px solid;
+    background-color: rgb(253, 199, 51);
+    color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    height: 3pc;
+    position: sticky;
+    top: 0%;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 2px 3px 6px black;
+}
+
+.List-image{
+    width: 30%;
+    margin-left: 25%;
+    margin-top: 2%;
+    position: absolute;
+    z-index: -1;
+    animation: mylistimage 4s;
+}
+
+@keyframes mylistimage{
+    0%{
+        width: 5%;
+        margin-top: 0%;
+    }
+    100%{
+        width: 30%;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .List-head{
+        font-size: 17px;
+    }
+    .list-btn{
+        width: 80%;
+        font-size: 15px;
+        height: 30px;
+        margin-top: 10px;
+        /* border: 2px solid orange; */
+    }
+
+    .List-image{
+        width: 37%;
+        margin-left: 15%;
+        margin-top: 16%;
+        animation: mylistimage 4s;
+    }
+    @keyframes mylistimage{
+        0%{
+            width: 5%;
+            margin-top: 0%;
+        }
+        100%{
+            width: 37%;
+            margin-top: 16%;
+        }
+    }
+
+    .list-option-btn{
+        margin-left: 40%;
+        height: 17pc;
+        width: 54%;
+    }
+    .notes-head{
+        height: 2pc;
+        font-size: 16px;
+    }
+    .list-button{
+        height: 20px;
+    margin-top: 8px;
+    width: 96%;
+    margin-left: 5px;
+    font-size: 14px;
+    padding: 18px 12px;
+    border: none;
+    border-bottom: 2px solid rgb(43, 43, 124);
+    }
+}
+
+
+@media only screen and (max-width: 440px){
+    .List-head{
+        font-size: 16px;
+    }
+    
+    .list-btn{
+        font-size: 13px;
+    }
+
+    .list-option-btn{
+        height: 19pc;
+    }
+    .notes-head{
+        font-size: 15px;
+    }
+    .list-button{
+        font-size: 13px;
+        padding: 20px 6px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .list-option-btn{
+        margin-left: 38%;
+        height: 17pc;
+        width: 57%;
+    }
+    .list-button{
+        font-size: 12px;
+    }
+}
+
+
+
+

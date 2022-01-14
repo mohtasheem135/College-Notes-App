@@ -1,0 +1,184 @@
+.admin-login-body{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 86vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-admin-input-container{
+    border: 2px solid rgb(0, 0, 0);
+    width: 35%;
+    height: 20pc;
+    box-shadow: 3px 1px 5px black;
+    border-radius: 5px;
+   
+}
+
+.login-admin-form{
+    /* border: 2px solid rgb(0, 250, 12); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 14pc;margin-top: 9%;
+    outline: none;
+    
+    /* width: 141%; */
+}
+
+.input-admin-login{
+    padding: 0px 4px;
+    font-size: 18px;
+    height: 2pc;
+    width: 141%;
+    margin-left: -16%;
+    background: none;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    
+}
+
+.input-admin-login:hover{
+    box-shadow: 0px 0px 5px grey;
+}
+
+.input-admin-btn{
+    border: none;
+    outline: none;
+    background-color: rgb(82, 82, 82);
+    padding: 7px 12px;
+    width: 145%;
+    margin-left: -35px;
+    border-radius: 7px;
+    font-size: 17px;
+    color: white;
+}
+
+.input-admin-btn:hover{
+    color: white;
+    background: rgb(37, 59, 255);
+    cursor: pointer;
+}
+
+.VI-login-image{
+    position: absolute;
+    width: 46%;
+    z-index: -1;
+    margin-left: 53%;
+    margin-top: 0.5%;
+}
+
+
+
+.VI-admin-register-image{
+    position: absolute;
+    width: 46%;
+    z-index: -1;
+    margin-left: 53%;
+    margin-top: 2.5%;
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .login-admin-input-container{
+        border: 2px solid rgb(0, 0, 0);
+        width: 73%;
+        height: 18pc;
+    }
+    .input-admin-login{
+        padding: 12px 6px;
+        font-size: 14px;
+        height: 0pc;
+        width: 101%;
+        margin-left: -3px;
+        border: 1.5px solid black;
+    }
+
+    .input-admin-btn{
+        border: none;
+    outline: none;
+    background-color: rgb(82, 82, 82);
+    padding: 6px 0px;
+    width: 109%;
+    margin-left: -2px;
+    border-radius: 7px;
+    font-size: 14px;
+    }
+
+    .VI-admin-register-image {
+        margin-left: -2%;
+    margin-top: 12%;
+    width: 101%;
+    }
+
+    .VI-login-image{
+        
+        margin-left: 4%;
+        margin-top: 6.5%;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .VI-admin-register-image {
+        margin-left: -3%;
+    margin-top: 20%;
+    width: 105%;
+    }
+
+    .VI-login-image{
+        
+        margin-left: -4%;
+    margin-top: 15.5%;
+    width: 108%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .login-admin-input-container{
+        border: 2px solid rgb(0, 0, 0);
+        width: 78%;
+        margin-top: -22%;
+        height: 18pc;
+    }
+
+
+    .VI-admin-register-image {
+        margin-left: -3%;
+    margin-top: 20%;
+    width: 105%;
+    }
+
+    .VI-login-image{
+        
+        margin-left: -4%;
+    margin-top: 15.5%;
+    width: 108%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .login-admin-input-container{
+        border: 2px solid rgb(0, 0, 0);
+        width: 83%;
+        /* margin-top: -27%; */
+        height: 18pc;
+    }
+
+    .VI-admin-register-image {
+        margin-left: -3%;
+    margin-top: 20%;
+    width: 105%;
+    }
+
+    .VI-login-image{
+        
+        margin-left: -11%;
+    margin-top: 28.5%;
+    width: 120%;
+    }
+}

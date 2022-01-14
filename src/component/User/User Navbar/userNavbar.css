@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.navbar-user-container{
+    border: 2px solid rgb(143, 143, 143);
+    background-color: black;
+    /* height: 3pc; */
+    /* align-items: center; */
+}
+
+.nav-user-ul{
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
+}
+
+.nav-user-ul li{
+    list-style: none;
+    /* border: 2px solid green; */
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.nav-user-ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-user-ul li a:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.nav-user-login-li-name{
+    position: absolute;
+    left: 80%;
+    color: white;
+}
+
+.nav-user-login-li-name:hover{
+    cursor: default;
+}
+
+@media only screen and (max-width: 500px){
+
+    .nav-user-ul li{
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .nav-user-login-li-name{
+        left: 64%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .nav-user-ul li{
+        font-size: 15px;
+        margin-left: 0px;
+        padding: 3px 18px;
+    }
+
+    .nav-user-ul li a{
+        margin-left: -20px;
+    }
+
+    .nav-user-login-li-name{
+        left: 56%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+
+    .nav-user-ul li{
+        font-size: 13px;
+        margin-left: 0px;
+        padding: 3px 22px;
+    }
+
+    .nav-user-ul li a{
+        margin-left: -28px;
+    }
+
+    .nav-user-login-li-name{
+        left: 52%;
+    }
+}

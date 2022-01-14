@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+
+
+.input-notice{
+    
+    width: 34%;
+    height: 8pc;
+    margin-left: 44%;
+    margin-top: 11%;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 2px 3px 6px black;
+}
+
+.notice-btn{
+    padding: 9px 27px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 56%;
+    border: none;
+    border-bottom: 2px solid rgb(255, 115, 0);
+}
+
+.notice-btn:hover{
+    background-color: rgb(255, 175, 110);
+    cursor: pointer;
+}
+
+
+.Notice-img{
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 500px){
+    .input-notice{
+        width: 65%;
+        height: 6pc;
+        margin-left: 19%;
+        margin-top: 45%;
+        font-size: 17px;
+    }
+    .Notice-img{
+        width: 54%;
+        margin-left: 109px;
+        margin-top: 50px;
+    }
+    .notice-btn{
+        padding: 7px 24px;
+        font-size: 17px;
+        margin-left: 43%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .input-notice {
+        width: 70%;
+        height: 4pc;
+        margin-left: 17%;
+        margin-top: 45%;
+        font-size: 17px;
+    }
+    .Notice-img{
+        width: 57%;
+        margin-left: 88px;
+        margin-top: 32px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .input-notice{
+        width: 70%;
+        height: 4pc;
+        margin-left: 16%;
+        margin-top: 44%;
+        font-size: 15px;
+    }
+    .Notice-img{
+        width: 60%;
+        margin-left: 72px;
+        margin-top: 19px;
+    }
+    .notice-btn{
+        padding: 7px 24px;
+        font-size: 14px;
+        margin-left: 43%;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .Notice-img{
+        width: 60%;
+        margin-left: 64px;
+        margin-top: 19px;
+    }
+}
+
