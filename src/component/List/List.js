@@ -63,13 +63,12 @@ const List = () => {
             {localStorage.getItem('User_Name')!="" ? <UserNavbar /> : <Navbar/> }
             <h2 className="List-head">~ {DataNavigation.getData('Semester')} ~</h2><hr />
             <img src={img_1} className="List-image" />
-            <div className="list-item">
+            {/* <div className="list-item"> */}
             {Object.keys(data).map((id, index) => {
                 return (
                     <button className="list-btn" onClick={selection} value={data[id]}>{data[id]}</button>
                 )
             })}
-            </div>
             <br/><br/>
 
             <div className="list-option-btn">

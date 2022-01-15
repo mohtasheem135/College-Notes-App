@@ -9,20 +9,15 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.list-item{
-    width: 30%;
-    /* border: 2px solid red; */
-}
-
 .list-btn{
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     margin-top: 20px;
-    width: 40%;
+    width: 17%;
     height: 40px;
     font-size: 17px;
-    margin-left: 10%;
+    margin-left: 4%;
     border: none;
     border-bottom: 2px solid green;
     font-family: 'Raleway', sans-serif;
@@ -75,13 +70,13 @@
     color: white;
 }
 
-.list-link{
+/* .list-link{
     display: flex;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     margin-left: 85%;
     margin-top: -130px;
     
-}
+} */
 
 .notes-head{
     border: 2px solid;
@@ -118,86 +113,132 @@
     }
 }
 
-@media only screen and (max-width: 500px){
-    .List-head{
-        font-size: 17px;
-    }
+@media only screen and (max-width: 700px){
+
     .list-btn{
-        width: 80%;
-        font-size: 15px;
-        height: 30px;
-        margin-top: 10px;
-        /* border: 2px solid orange; */
+        display: inline;
+    margin-left: 48px;
+    font-size: 17px;
+    width: 40%;
+    }
+
+    .list-option-btn{
+        margin-left: 13%;
+        height: 28pc;
+        width: 73%;
+        position: absolute;
+        top: 80%;
     }
 
     .List-image{
-        width: 37%;
-        margin-left: 15%;
-        margin-top: 16%;
+        width: 50%;
+        margin-left: 27%;
+        /* margin-top: 51%; */
+        position: absolute;
+        top: 90%;
+        z-index: -1;
         animation: mylistimage 4s;
     }
     @keyframes mylistimage{
         0%{
             width: 5%;
-            margin-top: 0%;
+            margin-top: 47%;
         }
         100%{
-            width: 37%;
-            margin-top: 16%;
+            width: 50%;
+            margin-top: 51%;
         }
     }
 
+}
+
+@media only screen and (max-width: 500px){
     .list-option-btn{
-        margin-left: 40%;
-        height: 17pc;
-        width: 54%;
+        width: 82%;
+    margin-left: 8%;
+    }
+    .list-btn{
+        font-size: 15px;
+        width: 140px;
+        margin-left: 70px;
     }
     .notes-head{
-        height: 2pc;
-        font-size: 16px;
-    }
-    .list-button{
-        height: 20px;
-    margin-top: 8px;
-    width: 96%;
-    margin-left: 5px;
-    font-size: 14px;
-    padding: 18px 12px;
-    border: none;
-    border-bottom: 2px solid rgb(43, 43, 124);
+        font-size: 22px;
     }
 }
 
 
 @media only screen and (max-width: 440px){
-    .List-head{
-        font-size: 16px;
-    }
-    
     .list-btn{
-        font-size: 13px;
+        margin-left: 72px;
+        font-size: 15px;
+        height: 43px;
+        width: 105px;
     }
 
     .list-option-btn{
-        height: 19pc;
+        margin-left: 7%;
+        height: 25pc;
+        width: 82%;
+        top: 80%;
+    }
+
+    .List-image{
+        width: 55%;
+        margin-left: 21%;
+        top: 95%;
+        animation: mylistimage 4s;
+    }
+    @keyframes mylistimage{
+        0%{
+            width: 5%;
+            margin-top: 47%;
+        }
+        100%{
+            width: 55%;
+            top: 95%;
+        }
     }
     .notes-head{
-        font-size: 15px;
+        font-size: 22px;
     }
     .list-button{
-        font-size: 13px;
-        padding: 20px 6px;
+        margin-left: 20px;
+        font-size: 15px;
     }
 }
 
 @media only screen and (max-width: 380px){
+    .list-btn{
+        margin-left: 33px;
+        width: 130px;
+    }
+
     .list-option-btn{
-        margin-left: 38%;
-        height: 17pc;
-        width: 57%;
+        margin-left: 5%;
+        height: 24pc;
+        width: 86%;
+    }
+}
+
+
+@media only screen and (max-width: 341px){
+    .List-head{
+        font-size: 19px;
+    }
+    .list-btn{
+        margin-left: 30px;
+        font-size: 13px;
+        height: 39px;
+        width: 114px;
+    }
+
+    .list-option-btn{
+        top: 78%;
     }
     .list-button{
-        font-size: 12px;
+        margin-left: 14px;
+        font-size: 14px;
     }
 }
 
