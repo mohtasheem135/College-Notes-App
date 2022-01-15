@@ -288,36 +288,112 @@
 }
 
 
+@media only screen and (max-width: 440px){
+    .notice-section{
+        margin-top: 24%;
+    width: 83%;
+    margin-left: 24px;
+    height: 20pc;
+    z-index: 1;
+    }
+
+    .notice-user-para{
+        padding: 8px 8px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .notice-head{
+        font-size: 22px;
+    }
+    .option-btn{
+        /* border: 2px solid black; */
+        width: 80%;
+        margin-left: 7%;
+        margin-top: 4%;
+        display: flex;
+        animation: myselection 3s;
+    }
+    
+@keyframes myselection {
+    0%{
+        margin-left: 100%;
+    }
+    100%{
+        margin-left: 7%;
+    }
+}
+    .selection-home{
+        margin-left: 15px;
+        margin-top: 12px;
+        font-size: 13px;
+        padding: 11px 0px;
+    }
+    .vector-image{
+        z-index: -1;
+        width: 61%;
+        margin-top: 30%;
+        margin-left: 18%;
+        animation: myimagees 5s;
+    }
+}
+
+
 
 
 @media only screen and (max-width: 400px){
+    .option-btn{
+        /* border: 2px solid black; */
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 4%;
+        display: flex;
+        animation: myselection 3s;
+    }
+    @keyframes myselection {
+        0%{
+            margin-left: 100%;
+        }
+        100%{
+            margin-left: 4%;
+        }
+    }
     .notice-user-para{
         font-size: 12px;
     }
-    .selection-home{
-        width: 8pc;
-    }
     .vector-image{
-        z-index: -1;
-        width: 68%;
-        margin-top: -7%;
-        margin-left: 14%;
-        animation: myimagees 5s;
+        margin-top: 28%;
     }
 }
 
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 350px){
+    .option-btn{
+        /* border: 2px solid black; */
+        width: 100%;
+        margin-left: -2%;
+        margin-top: 4%;
+        display: flex;
+        animation: myselection 3s;
+    }
+    @keyframes myselection {
+        0%{
+            margin-left: 100%;
+        }
+        100%{
+            margin-left: -2%;
+        }
+    }
+    .notice-section{
+        margin-left: 20px;
+    }
     .selection-home{
-        width: 7pc;
+        font-size: 12px;
     }
     .vector-image{
-        z-index: -1;
-        width: 68%;
-        margin-top: -7%;
-        margin-left: 14%;
-        animation: myimagees 5s;
+        margin-top: 35%;
     }
 }
+
+
 
 
 
