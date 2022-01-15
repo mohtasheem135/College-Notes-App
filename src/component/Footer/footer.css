@@ -19,48 +19,34 @@
 
 @media only screen and (max-width: 700px){
     .footer-container{
-        margin-top: 73%;
+    position: absolute;
+    width: 95%;
+    height: 3pc;
+    top: 167%;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 440px){
     .footer-container{
-        margin-top: 82%;
+    top: 158%;
+    }
+    .foot-para{
+        font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 380px){
     .footer-container{
-        margin-top: 100%;
+    top: 154%;
     }
-}
-
-@media only screen and (max-width: 470px){
-    .footer-container{
-        margin-top: 106%;
-    }
-}
-
-@media only screen and (max-width: 390px){
-    .footer-container{
-        margin-top: 112%;
-    }
-}
-
-@media only screen and (max-width: 355px){
-    .footer-container{
-        margin-top: 120%;
+    .foot-para{
+        font-size: 12px;
     }
 }
 
 @media only screen and (max-width: 341px){
     .footer-container{
-        margin-top: 130%;
+    top: 152%;
     }
 }
 
-@media only screen and (max-width: 325px){
-    .footer-container{
-        margin-top: 137%;
-    }
-}

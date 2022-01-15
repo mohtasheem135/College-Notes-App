@@ -59,6 +59,7 @@
     margin-left: 30px;
     font-size: 19px;
     padding: 12px 12px;
+    z-index: -1;
     border: none;
     border-left: 2px solid rgb(43, 43, 124);
     border-bottom: 2px solid rgb(43, 43, 124);
