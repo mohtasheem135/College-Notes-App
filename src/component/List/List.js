@@ -9,6 +9,7 @@ import "./list.css";
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import img_1 from "./Images/VI-2.jpg";
+import Footer from '../Footer/Footer';
 
 const List = () => {
     const [data, setData] = useState({});
@@ -84,7 +85,7 @@ const List = () => {
                 )
             })}
             </div>
-
+            <Footer/>
         </div>
     )
 }

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.footer-container{
+    border: 2px solid black;
+    background-color: black;
+    box-shadow: 0px -3px 6px rgb(109, 109, 109);
+    z-index: 1;
+    bottom: 12px;
+}
+
+.foot-para{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+@media only screen and (max-width: 700px){
+    .footer-container{
+        margin-top: 73%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .footer-container{
+        margin-top: 82%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .footer-container{
+        margin-top: 100%;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .footer-container{
+        margin-top: 106%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .footer-container{
+        margin-top: 112%;
+    }
+}
+
+@media only screen and (max-width: 355px){
+    .footer-container{
+        margin-top: 120%;
+    }
+}
+
+@media only screen and (max-width: 341px){
+    .footer-container{
+        margin-top: 130%;
+    }
+}
+
+@media only screen and (max-width: 325px){
+    .footer-container{
+        margin-top: 137%;
+    }
+}
