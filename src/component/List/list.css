@@ -43,6 +43,7 @@
     position: absolute;
     top: 25%;
     width: 38%;
+    overflow: auto;
     /* margin-top: -33.5%; */
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -201,7 +202,7 @@
         margin-left: 7%;
         height: 25pc;
         width: 82%;
-        top: 80%;
+        top: 92%;
     }
 
     .List-image{
