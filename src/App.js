@@ -18,20 +18,19 @@ const App = () => {
   return (
     <div>
       <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/upload" element={<Upload/>} />
-      <Route path="userhome/list" element={<List/>} />
-      <Route path="/add" element={<Add/>} />
-      <Route path="/addnote" element={<AddNote/>} />
-      <Route path="adminnavbar" element={<AdminNavbar/>} />
-      <Route path="adminlogin" element={<AdminLogin/>} />
-      <Route path="adminregister" element={<AdminRegister/>} />
-      <Route path="error" element={<NotAdmin/>} />
-      <Route path="userlogin" element={<UserLogin/>} />
-      <Route path="userregister" element={<UserRegister/>} />
-      <Route path="/userhome" element={<UserHome/>} />
-      <Route path="/addsem" element={<AddSemester/>} />
-
+        <Route path="/" element={<Home />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="userhome/list" element={<List />} />
+        <Route path="/add" element={<Add />} />
+        <Route path="/addnote" element={<AddNote />} />
+        <Route path="adminnavbar" element={<AdminNavbar />} />
+        <Route path="adminlogin" element={<AdminLogin />} />
+        <Route path="adminregister" element={<AdminRegister />} />
+        <Route path="error" element={<NotAdmin />} />
+        <Route path="userlogin" element={<UserLogin />} />
+        <Route path="userregister" element={<UserRegister />} />
+        <Route path="/userhome" element={<UserHome />} />
+        <Route path="/addsem" element={<AddSemester />} />
       </Routes>
     </div>
   )

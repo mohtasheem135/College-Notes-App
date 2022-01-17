@@ -22,7 +22,7 @@
     position: absolute;
     width: 95%;
     height: 3pc;
-    top: 167%;
+    top: 179%;
     }
 }
 
@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: 341px){
     .footer-container{
-    top: 152%;
+    top: 159%;
     }
 }
 

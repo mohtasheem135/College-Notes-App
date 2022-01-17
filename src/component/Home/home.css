@@ -7,7 +7,7 @@
 .notice-home-section{
     border: 2px solid black;
     width: 30%;
-    height: 20pc;
+    height: 25pc;
     margin-left: 3%;
     margin-top: 40px;
     z-index: 1;
@@ -62,9 +62,9 @@
     80%{
         top: 0px;
     }
-    100%{
+    /* 100%{
         top: 10px;
-    }
+    } */
 }
 
 

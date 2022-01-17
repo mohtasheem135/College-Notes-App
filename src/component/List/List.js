@@ -33,7 +33,7 @@ const List = () => {
     }, [])
 
     const view = async (e) => {
-        console.log("THISSS   -"+DataNavigation.getData('teacher_name_folder'));
+        // console.log(DataNavigation.getData('teacher_name_folder'));
 
         // {<h1><a href={e.target.value} >{e.target.value}</a></h1>}
         const link = fireDB.storage().ref().child(`PDF Folder/${DataNavigation.getData('Semester')}/${DataNavigation.getData('teacher_name_folder')}/${e.target.value}`)
@@ -47,7 +47,7 @@ const List = () => {
     }
 
     const selection = (e) => {
-        console.log(e.target.value);
+        // console.log(e.target.value);
         DataNavigation.setData('teacher_name_folder', e.target.value);
 
         fireDB.storage().ref().child(`PDF Folder/${DataNavigation.getData('Semester')}/${e.target.value}`).listAll().then((snap => {
@@ -73,7 +73,7 @@ const List = () => {
             <br/><br/>
 
             <div className="list-option-btn">
-                <h1 className="notes-head">Notes</h1>
+                <h1 className="notes-head">Notes ~ <p className="notes-head-name">{DataNavigation.getData('teacher_name_folder')}</p></h1>
             {Object.keys(values).map((id, index) => {
                 // console.log(data[id].name);
                 return (

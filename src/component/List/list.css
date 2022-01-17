@@ -94,6 +94,13 @@
     box-shadow: 2px 3px 6px black;
 }
 
+.notes-head-name{
+    color: black;
+    font-size: 17px;
+    margin-left: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
 .List-image{
     width: 30%;
     margin-left: 25%;
@@ -128,14 +135,14 @@
         height: 28pc;
         width: 73%;
         position: absolute;
-        top: 80%;
+        top: 93%;
     }
 
     .List-image{
         width: 50%;
         margin-left: 27%;
         position: absolute;
-        top: 90%;
+        top: 98%;
         z-index: -1;
         animation: mylistimage 4s;
     }
@@ -165,8 +172,22 @@
     .notes-head{
         font-size: 22px;
     }
+    .notes-head-name{
+        font-size: 14px;
+    }
 }
 
+/* @media only screen and (max-width: 400px){
+    .list-btn{
+        margin-left: 72px;
+    }
+    .list-option-btn{
+        margin-left: 7%;
+        height: 25pc;
+        width: 82%;
+        top: 80%;
+    }
+} */
 
 @media only screen and (max-width: 440px){
     .list-btn{
@@ -234,7 +255,7 @@
     }
 
     .list-option-btn{
-        top: 78%;
+        top: 85%;
     }
     .list-button{
         margin-left: 14px;
