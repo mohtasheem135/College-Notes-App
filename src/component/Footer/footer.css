@@ -28,7 +28,7 @@
 
 @media only screen and (max-width: 440px){
     .footer-container{
-    top: 158%;
+    top: 169%;
     }
     .foot-para{
         font-size: 14px;
@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 380px){
     .footer-container{
-    top: 154%;
+    top: 166%;
     }
     .foot-para{
         font-size: 12px;
