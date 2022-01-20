@@ -43,10 +43,11 @@ const UserLogin = () => {
         //     }
         // })
         // console.log(data)
+        
         {Object.keys(data).map((id, index)=>{
             console.log("THISSSSSS ------"+data[id].name)
             localStorage.setItem('User_Name', data[id].name)
-            if(data[id].roll==DataNavigation.getData('User_Login_Roll') ){
+            if(data[id].roll==DataNavigation.getData('User_Login_Roll') && DataNavigation.getData('User_Login_Pass_Code')==localStorage.getItem('var')){
                 navigate(`/userhome`)
             }
             else {
@@ -59,7 +60,7 @@ const UserLogin = () => {
         
     }
 
-
+localStorage.setItem('var','M.E@135')
     // const handelInputChange = (e) => {
     //     let { name, value } = e.target;
     //     setInitialState({
@@ -83,6 +84,10 @@ const UserLogin = () => {
             }
         })
     }
+    const handelInputChange_pass=(e)=>{
+        DataNavigation.setData('User_Login_Pass_Code', e.target.value);
+        console.log(e.target.value)
+    }
 
     
 
@@ -98,7 +103,8 @@ const UserLogin = () => {
                 <div className="login-input-container">
                     <form className="login-form">
                     {/* <input className="input-login" name="name" type="text" placeholder="Enter Name" onChange={handelInputChange_Name} /> */}
-                    <input className="input-login" name="roll" type="text" placeholder="202010xx" onChange={handelInputChange_Roll} />
+                    <input className="input-login" name="roll" type="text" placeholder="Enter Your Roll no." onChange={handelInputChange_Roll} />
+                    <input className="input-login" name="passcode" type="text" placeholder="Enter the Pass Code" onChange={handelInputChange_pass} />
                     {/* <input className="input-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange_Email} /> */}
                     {/* <input  className="input-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange_Password} /> */}
                     <input onClick={handelSubmit} className="input-login input-btn" type="submit" value="LogIn" />

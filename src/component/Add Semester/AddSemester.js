@@ -34,19 +34,8 @@ const AddSemester = () => {
         // console.log(e.target.value);
         DataNavigation.setData('add_semester_name', e.target.value);
     }
-    var count;
-    Object.keys(data).map((id, index) => {
-        // console.log(data[id]);
-        if (data[id] === DataNavigation.getData('add_semester_name'));
-        {
-            count++;
-        }
-    })
 
     const handelClick = () => {
-        console.log(count);
-        
-        if (count == 0) {
             fireDB.database().ref().child('Semester').push(DataNavigation.getData('add_semester_name'), (err) => {
                 if (err) {
                     console.log(err);
@@ -56,14 +45,7 @@ const AddSemester = () => {
                     navigate("/add");
                 }
             })
-        } else {
-            alert("This Semester is alredy added Check it properly !!!!");
-            // count=0;
-            // DataNavigation.setData('add_semester_name', null);
-            window.location.reload();
-        }
-        // console.log(DataNavigation.getData('add_semester_name'));
-
+        
     }
 
     const addCategory = () => {

@@ -1,0 +1,149 @@
+.list-btn-pyq{
+    border-bottom: 4px solid rgb(39, 97, 255);
+    box-shadow: 2px 3px 6px rgb(69, 114, 238);
+}
+
+.list-btn-pyq:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.list-btn-container-pyq{
+    /* border: 2px solid black; */
+    margin-top: 60px;
+}
+
+.list-option-btn-pyq{
+    top: 22%;
+}
+
+.list-button-pyq{
+    font-size: 17px;
+}
+
+.footer-container-pyq{
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 700px){
+    .list-option-btn-pyq{
+        top: 62%;
+    }
+    .footer-container-pyq{
+        margin-top: -22%;
+    }
+    .list-button-pyq{
+        font-size: 14px;
+    }
+    .nav-li-pyq{
+        /* border: 2px solid red; */
+        margin-left: -36px;
+    }
+    .nav-login-li-pyq{
+        /* border: 2px solid white; */
+        
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .nav-li-pyq a{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .nav-login-li-pyq a{
+        font-size: 16px;
+        
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .nav-li-pyq a{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .nav-login-li-pyq a{
+        font-size: 14px;
+        
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .list-btn-pyq{
+    margin-left: 60px;
+    font-size: 14px;
+    }
+    .list-btn-container-pyq{
+        margin-top: 40px;
+    }
+    .footer-container-pyq{
+        margin-top: -32%;
+    }
+    .list-button-pyq{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .list-btn-pyq{
+        font-size: 14px;
+        font-size: 14px;
+        margin-left: 37px;
+        width: 37%;
+    }
+    .list-option-btn-pyq{
+        margin-left: 5%;
+        height: 25pc;
+        width: 87%;
+    }
+    .list-button-pyq{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .list-btn-pyq{
+        font-size: 13px;
+        margin-left: 37px;
+    }
+    .list-option-btn-pyq{
+        margin-left: 3%;
+        height: 25pc;
+        width: 90%;
+    }
+    .list-button-pyq{
+        font-size: 14px;
+    }
+    .foot-para-pyq{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .list-btn-pyq{
+        font-size: 12px;
+        margin-left: 27px;
+    }
+    .list-option-btn-pyq{
+        margin-left: 3%;
+        height: 25pc;
+        width: 90%;
+    }
+    .list-button-pyq{
+        font-size: 12px;
+    }
+    .footer-container-pyq{
+        margin-top: -30%;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .nav-li-pyq a{
+        font-size: 13px;
+        margin-left: -9px;
+    }
+    .nav-login-li-pyq a{
+        font-size: 13px;
+        
+    }
+}

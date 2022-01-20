@@ -13,6 +13,7 @@ import UserLogin from "./component/User/User Login/UserLogin";
 import UserRegister from "./component/User/User Register/UserRegister";
 import UserHome from "./component/User/User Home/UserHome";
 import AddSemester from "./component/Add Semester/AddSemester";
+import PYQ from "./component/PYQ/PYQ";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="userregister" element={<UserRegister />} />
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/addsem" element={<AddSemester />} />
+        <Route path="/pyq" element={<PYQ />} />
       </Routes>
     </div>
   )
