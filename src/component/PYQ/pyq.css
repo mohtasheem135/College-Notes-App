@@ -26,6 +26,7 @@
     margin-top: 10%;
 }
 
+
 @media only screen and (max-width: 700px){
     .list-option-btn-pyq{
         top: 62%;
@@ -149,13 +150,13 @@
 }
 
 
-
+/* 
 @media only screen and (max-height: 800px){
     .list-option-btn-pyq{
         top: 38%;
     }
     .list-btn-container-pyq{
-        /* border: 2px solid black; */
+        border: 2px solid black;
         margin-top: 22px;
     }
     .footer-container-pyq{
@@ -168,7 +169,7 @@
         top: 45%;
     }
     .list-btn-container-pyq{
-        /* border: 2px solid black; */
+        border: 2px solid black;
         margin-top: 22px;
     }
     .footer-container-pyq{
@@ -214,7 +215,7 @@
     
 
     .footer-container-pyq{
-        margin-top: -30%;
+        margin-top: -28%;
     }
 }
 
@@ -256,4 +257,4 @@
     .footer-container-pyq{
         margin-top: 40%;
     }
-}
+} */
