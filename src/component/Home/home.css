@@ -139,7 +139,9 @@
 .footer-Home-container{
     border: 2px solid black;
     background-color: black;
-    position: sticky;
+    position:fixed;
+   bottom:0;
+   width:100%;
     box-shadow: 2px -3px 6px black;
 }
 
