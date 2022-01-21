@@ -18,7 +18,7 @@ const Home = () => {
     const [date, setDate] = useState({});
     const navigate = useNavigate();
 
-    useEffect(()=>{
+    useEffect(() => {
         fireDB.database().ref().child(`Semester`).on("value", (snapshot) => {
             if (snapshot.val() != null) {
                 setData({
@@ -47,44 +47,44 @@ const Home = () => {
                 snapshot({});
             }
         })
-       
+
     }, [])
 
-    console.log("Notice - -  - -"+notice);
-       console.log("Date - -  - -"+date);
+    console.log("Notice - -  - -" + notice);
+    console.log("Date - -  - -" + date);
 
-    const handelClick=(e)=>{
+    const handelClick = (e) => {
         console.log(e.target.value);
-        DataNavigation.setData('Semester',e.target.value);
+        DataNavigation.setData('Semester', e.target.value);
         navigate("list");
-        
+
     }
-    
+
 
     return (
         <div className="main-home">
             {/* {localStorage.getItem('User_Name')!="" ? <UserNavbar/> : <Navbar/> } */}
-            <Navbar/>
-            
+            <Navbar />
+
             {/* <img src={img_1} className="bg-img" /> */}
             <div className="notice-home-section">
                 <h1 className="notice-home-head">Notice</h1>
                 {Object.keys(notice).map((id, index) => {
-                    
-                return(
-                    
-                    <>
-                    <p className="notice-home-main-para">{notice[id]}</p>
-                    {/* <hr/> */}
-                    </>
-                )
-                
-            })}
-            {/* <p className="notice-main-para">END</p> */}
-            
+
+                    return (
+
+                        <>
+                            <p className="notice-home-main-para">{notice[id]}</p>
+                            {/* <hr/> */}
+                        </>
+                    )
+
+                })}
+                {/* <p className="notice-main-para">END</p> */}
+
             </div>
             <div className="option-btn">
-            {/* {Object.keys(data).map((id, index) => {
+                {/* {Object.keys(data).map((id, index) => {
                 return(
                     
                     <button className="selection-home" onClick={handelClick} value={data[id]}>{data[id]}</button>
@@ -97,8 +97,10 @@ const Home = () => {
             <img src={img_5} className="vector-home-image" />
             {/* <img src={img_3} className="gif-home-image" /> */}
             {/* <img src={img_4} className="gif-home-image-1" /> */}
-            
+            <div className="footer-Home-container">
+                <p className="foot-para">&copy; Mohtasheem Ejaz</p>
             </div>
+        </div>
     )
 }
 

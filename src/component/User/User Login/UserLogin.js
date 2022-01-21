@@ -32,18 +32,6 @@ const UserLogin = () => {
         console.log(DataNavigation.getData('User_Login_Roll'))
 
         
-
-        // fireDB.database().ref().child(`User Panel of PDF App`).child(`${DataNavigation.getData('User_Login_Roll')}`).on("value", (snapshot) => {
-        //     if (snapshot.val() != null) {
-        //         setData({
-        //             ...snapshot.val()
-        //         })
-        //     } else {
-        //         snapshot({});
-        //     }
-        // })
-        // console.log(data)
-        
         {Object.keys(data).map((id, index)=>{
             console.log("THISSSSSS ------"+data[id].name)
             localStorage.setItem('User_Name', data[id].name)
@@ -60,15 +48,7 @@ const UserLogin = () => {
         
     }
 
-localStorage.setItem('var','M.E@135')
-    // const handelInputChange = (e) => {
-    //     let { name, value } = e.target;
-    //     setInitialState({
-    //         ...initialState,
-    //         [name]: value,
-    //     })
-    //     // console.log(initialState.email)
-    // }
+localStorage.setItem('var','CSE#1')
 
 
     const handelInputChange_Roll = (e) => {
