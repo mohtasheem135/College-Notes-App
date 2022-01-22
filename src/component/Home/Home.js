@@ -10,12 +10,16 @@ import img_3 from "./Images/giphy-2.gif"
 import img_4 from "./Images/giphy-1.gif"
 import img_5 from "./Images/VI-4.jpg"
 import UserNavbar from '../User/User Navbar/UserNavbar';
+import countapi from 'countapi-js';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const Home = () => {
 
     const [data, setData] = useState({});
     const [notice, setNotice] = useState({});
     const [date, setDate] = useState({});
+    const [count, setCount] = useState("");
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -60,12 +64,28 @@ const Home = () => {
 
     }
 
+    // countapi.visits().then((result) => {
+    //     console.log("Visit per page"+result.value);
+    //   });
+    useEffect(()=>{
+        countapi.visits('global').then((result) => {
+            console.log(result.value);
+            setCount(result.value)
+          });
+    }, [])
+      
+
+      
+
+    
+
 
     return (
         <div className="main-home">
             {/* {localStorage.getItem('User_Name')!="" ? <UserNavbar/> : <Navbar/> } */}
             <Navbar />
-
+            <VisibilityIcon className="viewIcon"/>
+            <h3 className="views">{count}</h3>
             {/* <img src={img_1} className="bg-img" /> */}
             <div className="notice-home-section">
                 <h1 className="notice-home-head">Notice</h1>

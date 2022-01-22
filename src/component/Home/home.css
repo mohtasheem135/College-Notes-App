@@ -2,7 +2,16 @@
 
 
 
+.views{
+    position: absolute;
+    left: 91%;
+}
 
+.viewIcon{
+    position: absolute;
+    left: 88%;
+    top: 90px;
+}
 
 .notice-home-section{
     border: 2px solid black;
@@ -146,7 +155,25 @@
 }
 
 
+@media only screen and (max-width: 700px){
+
+    .viewIcon{
+        left: 85%;
+    }
+}
+
 @media only screen and (max-width: 500px){
+
+    .views{
+       font-size: 16px;
+       top: 65px;
+       left: 90%;
+    }
+
+    .viewIcon{
+        left: 83%;
+        top: 77px;
+    }
 
     .notice-home-head{
         font-size: 22px;
@@ -185,6 +212,15 @@
 }
 
 @media only screen and (max-width: 440px){
+    .views{
+        font-size: 15px;
+        left: 86%;
+     }
+ 
+     .viewIcon{
+         left: 78%;
+         font-size: 17px;
+     }
     .notice-home-section{
         width: 79%;
         margin-left: 38px;
@@ -210,6 +246,15 @@
 }
 
 @media only screen and (max-width: 380px){
+    .views{
+        font-size: 15px;
+        left: 82%;
+     }
+ 
+     .viewIcon{
+         left: 72%;
+         font-size: 13px;
+     }
 
     .notice-home-head{
         font-size: 19px;
