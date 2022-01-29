@@ -61,7 +61,7 @@ const UserLogin = () => {
                     <input className="input-login" name="roll" type="text" placeholder="Enter Your Roll no." onChange={handelInputChange_Roll} />
                     <input className="input-login" name="passcode" type="text" placeholder="Enter the Pass Code" onChange={handelInputChange_pass} />
                     <input onClick={handelSubmit} className="input-login input-btn" type="submit" value="LogIn" />
-                    <input onClick={register} className="input-login input-btn" type="submit" value="Register" />
+                    {/* <input onClick={register} className="input-login input-btn" type="submit" value="Register" /> */}
                     </form>
                 </div>
             </div>
