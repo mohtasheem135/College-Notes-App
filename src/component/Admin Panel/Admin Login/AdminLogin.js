@@ -84,7 +84,7 @@ const AdminLogin = () => {
                     <input className="input-admin-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange_Email} />
                     <input  className="input-admin-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange_Password} />
                     <input onClick={handelSubmit} className=" input-admin-btn" type="submit" value="LogIn" />
-                    <input onClick={register} className=" input-admin-btn" type="submit" value="Register" />
+                    {/* <input onClick={register} className=" input-admin-btn" type="submit" value="Register" /> */}
                     </form>
                 </div>
             </div>
