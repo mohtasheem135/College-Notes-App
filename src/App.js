@@ -14,7 +14,6 @@ import UserRegister from "./component/User/User Register/UserRegister";
 import UserHome from "./component/User/User Home/UserHome";
 import AddSemester from "./component/Add Semester/AddSemester";
 import PYQ from "./component/PYQ/PYQ";
-import AddProfile from "./component/Profile/AddProfile";
 import MyProfile from "./component/My Profile/MyProfile";
 import EditProfile from "./component/Edit Profile/EditProfile";
 
@@ -36,7 +35,6 @@ const App = () => {
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/addsem" element={<AddSemester />} />
         <Route path="/pyq" element={<PYQ />} />
-        <Route path="/addprofile" element={<AddProfile />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="editprofile" element={<EditProfile />} />
       </Routes>
