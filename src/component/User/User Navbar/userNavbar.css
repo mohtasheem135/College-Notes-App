@@ -39,12 +39,85 @@
     color: white;
 }
 
-.nav-user-login-li-name:hover{
+/* .nav-user-login-li-name:hover{
     cursor: default;
+} */
+
+.profile-img{
+    width: 36%;
+    position: absolute;
+    margin-left: -81px;
+    border-radius: 100%;
+    /* margin-top: -31px; */
+}
+
+.dropdown{
+    cursor: pointer;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown-content{
+    color: #000000;
+    display: none;
+    margin-left: 72%;
+    position: absolute;
+    margin-top: 11px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 12px 40px;
+    z-index: 1;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.dropdown-content-1{
+    margin-top: 56px;
+    padding: 12px 38px;
+}
+
+.dropdown-content-2{
+    margin-top: 101px;
+    padding: 12px 47px;
+}
+
+.dropdown-content:hover{
+    display: block;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+}
+
+
+.dropdown:hover .dropdown-content{
+   
+   display: block;
 }
 
 @media only screen and (max-width: 500px){
 
+    .profile-img{
+        width: 34%;
+        margin-left: -55px;
+    }
+
+    .dropdown-content{
+        margin-left: 45%;
+        font-size: 14px;
+        padding: 7px 27px;
+    }
+    .dropdown-content-1{
+        margin-top: 43px;
+        padding: 7px 25px;
+    }
+    
+    .dropdown-content-2{
+        margin-top: 75px;
+        padding: 7px 33px;
+    }
     .nav-user-ul li{
         margin-left: 10px;
         font-size: 14px;
@@ -56,7 +129,28 @@
     }
 }
 
+@media only screen and (max-width: 420px){
+    .dropdown-content{
+        margin-left: 42%;
+        font-size: 13px;
+        padding: 7px 24px;
+    }
+    .dropdown-content-1{
+        margin-top: 42px;
+        padding: 7px 22px;
+    }
+    
+    .dropdown-content-2{
+        margin-top: 73px;
+        padding: 7px 30px;
+    }
+}
+
 @media only screen and (max-width: 400px){
+
+    .profile-img{
+        width: 30%;
+    }
 
     .nav-user-ul li{
         font-size: 15px;
@@ -73,7 +167,18 @@
     }
 }
 
+@media only screen and (max-width: 390px){
+    .dropdown-content{
+        margin-left: 32%;
+    }
+}
+
 @media only screen and (max-width: 340px){
+
+    .profile-img{
+        width: 26%;
+        margin-left: -48px;
+    }
 
     .nav-user-ul li{
         font-size: 13px;
@@ -89,3 +194,22 @@
         left: 52%;
     }
 }
+
+@media only screen and (max-width: 320px){
+    .dropdown-content{
+        margin-left: 26%;
+        font-size: 12px;
+    }
+    .dropdown-content-1{
+        margin-top: 41px;
+    }
+    
+    .dropdown-content-2{
+        margin-top: 71px;
+    }
+}
+
+
+
+
+

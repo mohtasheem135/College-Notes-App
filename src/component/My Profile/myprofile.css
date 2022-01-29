@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.myprofile-head-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myprofile-head-container p{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.myprofile-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myprofile-img{
+    margin-top: 8px;
+    width:7%;
+}
+
+.myprofile-head{
+    font-family: 'Raleway', sans-serif;
+}
+
+.myprofile-details-container{
+    /* border: 2px solid black; */
+    
+    box-shadow: 2px 3px 5px black;
+    border-radius: 15px;
+    width: 95%;
+    height: 24pc;
+    margin-left: 3%;
+}
+
+.myprofile-details{
+    /* border: 2px solid red; */
+    border-bottom: 2px solid rgb(24, 255, 139);
+    /* box-shadow: 2px 3px 5px black; */
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-left: 30px;
+    height: 40px;
+}
+
+.myprofile-details-tag{
+    cursor: default;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.myprofile-details-data{
+    cursor: default;
+    position: absolute;
+    left: 40%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+@media only screen and (max-width: 500px){
+    .myprofile-head-container p{
+        font-size: 21px;
+    }
+    .myprofile-details{
+        margin-left: 10px;
+    }
+    .myprofile-details-tag{
+        font-size: 15px;
+    }
+    
+    .myprofile-details-data{
+        font-size: 14px;
+    }
+    .myprofile-img{
+        width:15%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .myprofile-head-container p{
+        font-size: 19px;
+    }
+    .myprofile-details-tag{
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    
+    .myprofile-details-data{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    
+    .myprofile-head-container p{
+        font-size: 17px;
+    }
+    .myprofile-details-container{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .myprofile-details-tag{
+        margin-left: 0px;
+    }
+    .myprofile-img{
+        width:17%;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .myprofile-details-tag{
+        font-size: 13px;
+    }
+    
+    .myprofile-details-data{
+        font-size: 12px;
+    }
+}

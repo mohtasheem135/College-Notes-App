@@ -8,7 +8,7 @@ import img_1 from "./Images/BG-3.jpg"
 import img_2 from "./Images/VI-2.png"
 import img_3 from "./Images/giphy-2.gif"
 import img_4 from "./Images/VI-6.png"
-import img_5 from "./Images/VI-4.jpg"
+import img_5 from "./Images/VI-4-1.png"
 import img_6 from "./Images/VI-7.png"
 import img_7 from "./Images/VI-8.png"
 import UserNavbar from '../User Navbar/UserNavbar';

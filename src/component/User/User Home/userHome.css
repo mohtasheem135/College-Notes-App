@@ -9,7 +9,7 @@
     margin-top: 40px;
     overflow: auto;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     font-family: 'Raleway', sans-serif;
     box-shadow: 2px 3px 6px rgb(0, 0, 0);
 }
@@ -55,24 +55,39 @@
     30%{
         top: 35px;
     }
+    40%{
+        top: 45px;
+    }
     50%{
-        top: -150px;
+        top: -130px;
+    }
+    60%{
+        top: -160px;
+    }
+    70%{
+        top: -190px;
     }
     
-    80%{
+    75%{
+        top: -290px;
+    }
+    85%{
+        top: -200px;
+    }
+    90%{
+        top: -130px;
+    }
+    100%{
         top: 0px;
     }
-    /* 100%{
-        top: 10px;
-    } */
 }
 
 .option-btn{
     /* border: 2px solid black; */
-    width: 55%;
+    width: 25%;
     margin-left: 39%;
     margin-top: 42px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     /* border: 2px solid black; */
@@ -91,7 +106,8 @@
     border: none;
     border-radius: 20px;
     font-size: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin-top: 20px;
     /* margin-left: 43%; */
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -117,33 +133,37 @@
 
 }
 
-.vector-image{
-    /* border: 2px solid black; */
+/* .vector-image{
+    border: 2px solid black;
     width: 35%;
     margin-left: 44%;
     margin-top: -46px;
-    /* height: 28pc; */
+    height: 28pc;
     z-index: -1;
     transition: all 1s;
     animation: myimage 6s ;
-}
+} */
 
-.vector-image:hover{
-    
-    margin-left: 44.5%;
-    margin-top: -37px;
-    transition: all 1s;
+.vector-image{
+    /* border: 2px solid black;  */
+    width: 35%;
+    margin-left: 61%;
+    margin-top: -316px;
+    /* height: 28pc; */
     z-index: -1;
+    transition: all 1s;
+    animation: Myimage 5s;
 }
 
-@keyframes myimage{
+
+@keyframes Myimage{
     0%{
-        width: 0%;
-        margin-top: 37px;
+        /* width: 0%; */
+        margin-top: 600px;
     }
     100%{
-        margin-top: -37px;
-        width: 35%;
+        /* width: 35%; */
+        margin-top: -316px;
     }
 }
 
@@ -151,8 +171,8 @@
     width: 5%;
     position: absolute;
     z-index: 1;
-    margin-left: 61%;
-    margin-top: 60px;
+    margin-left: 80%;
+    margin-top: -220px;
     transition: all 1s;
     animation: myplane-1 10s ;
 }
@@ -162,13 +182,13 @@
         margin-left: 200%;
     }
     100%{
-        margin-left: 61%;
+        margin-left: 80%;
     }
 }
 
 .vector-plane-image:hover{
-    margin-left: 62%;
-    margin-top: 67px;
+    margin-left: 81%;
+    margin-top: -218px;
     transition:  all 1s;
     transform: rotate(10deg);
 }
@@ -179,7 +199,7 @@
     z-index: 1;
     margin-left: -11%;
     z-index: 1;
-    margin-top: 159px;
+    margin-top: -60px;
     transform: rotate(10deg);
     transition: all 2s;
     animation: myplane-2 10s ;
@@ -188,18 +208,18 @@
 @keyframes myplane-2{
     0%{
         /* margin-left: -200%; */
-        margin-left: -15%;
-        width: 0%;
+        margin-left: -205%;
+        /* width: 0%; */
     }
     100%{
         margin-left: -11%;
-        width: 7%;
+        /* width: 7%; */
     }
 }
 
 .vector-plane-image-1:hover{
     transform: rotate(-25deg);
-    margin-top: 109px;
+    margin-top: -60px;
     margin-left: -9%;
 }
 
@@ -208,7 +228,7 @@
     position: absolute;
     z-index: 1;
     margin-left: -23%;
-    margin-top: 12%;
+    margin-top: -10%;
     transition: all 1s;
     animation: myplane-3 10s ;
 }
@@ -223,12 +243,15 @@
 }
 
 .vector-plane-image-2:hover{
-    margin-top: 10%;
+    margin-top: -10%;
     margin-left: -20%;
     transform: rotate(-25deg);
 }
 
 @media only screen and (max-width: 500px){
+
+    
+
     .notice-section{
         margin-top: 28px;
         width: 55%;
@@ -249,7 +272,7 @@
         /* border: 2px solid black; */
         width: 31%;
         margin-left: 65%;
-        margin-top: 91px;
+        margin-top: 115px;
         display: grid;
         animation: myselection 3s;
     }
@@ -290,7 +313,7 @@
 
 @media only screen and (max-width: 440px){
     .notice-section{
-        margin-top: 24%;
+        margin-top: 33%;
     width: 83%;
     margin-left: 24px;
     height: 20pc;
@@ -306,24 +329,13 @@
         font-size: 22px;
     }
     .option-btn{
-        /* border: 2px solid black; */
-        width: 80%;
-        margin-left: 7%;
-        margin-top: 4%;
-        display: flex;
-        animation: myselection 3s;
+        display: contents;
+        
     }
     
-@keyframes myselection {
-    0%{
-        margin-left: 100%;
-    }
-    100%{
-        margin-left: 7%;
-    }
-}
+
     .selection-home{
-        margin-left: 15px;
+        margin-left: 44px;
         margin-top: 12px;
         font-size: 13px;
         padding: 11px 0px;
@@ -341,21 +353,14 @@
 
 
 @media only screen and (max-width: 400px){
-    .option-btn{
-        /* border: 2px solid black; */
-        width: 90%;
-        margin-left: 4%;
-        margin-top: 4%;
-        display: flex;
-        animation: myselection 3s;
-    }
-    @keyframes myselection {
-        0%{
-            margin-left: 100%;
-        }
-        100%{
-            margin-left: 4%;
-        }
+    
+    
+    .selection-home{
+        margin-left: 35px;
+        width: 35%;
+        margin-top: 12px;
+        font-size: 13px;
+        padding: 11px 0px;
     }
     .notice-user-para{
         font-size: 12px;
@@ -366,21 +371,9 @@
 }
 
 @media only screen and (max-width: 350px){
-    .option-btn{
-        /* border: 2px solid black; */
-        width: 100%;
-        margin-left: -2%;
-        margin-top: 4%;
-        display: flex;
-        animation: myselection 3s;
-    }
-    @keyframes myselection {
-        0%{
-            margin-left: 100%;
-        }
-        100%{
-            margin-left: -2%;
-        }
+    
+    .selection-home{
+        width: 33%;
     }
     .notice-section{
         margin-left: 20px;

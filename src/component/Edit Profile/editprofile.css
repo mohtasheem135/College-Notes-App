@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.Add-Profile-container{
+    border: 2px solid rgb(76, 79, 255);
+    height: 30pc;
+    width: 66%;
+    margin-left: 17%;
+    display: grid;
+    justify-content: center;
+    box-shadow: 2px 3px 6px rgb(83, 115, 255);
+    border-radius: 15px;
+}
+
+.add-input-1{
+    margin-top: 25px;
+    width: 149%;
+    margin-right: 13pc;
+    margin-left: -80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 2px 10px;
+    border-bottom: 2px solid rgb(255, 190, 12);
+    /* border:  2px solid; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 7px 7px 0px 0px;
+    box-shadow: 2px 2px 5px rgb(255, 201, 102);
+}
+
+.add-input-2{
+    margin-top: -40px;
+}
+
+.profile-button{
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 85, 23);
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 3px 6px rgb(255, 149, 110);
+}
+
+.profile-button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 115, 64);
+    box-shadow: 2px 3px 6px rgb(255, 149, 110);
+    box-shadow: 2px 3px 6px rgb(255, 95, 36);
+}
+
+@media only screen and (max-width: 800px){
+   .add-input-1{
+    width: 100%;
+    margin-right: 10pc;
+    margin-left: -11px;
+    font-size: 14px;
+   }
+   .Add-Profile-container {
+    width: 75%;
+    margin-left: 13%;
+   }
+}
+
+@media only screen and (max-width: 700px){
+    .add-input-1{
+     width: 100%;
+     margin-right: 10pc;
+     margin-left: -11px;
+     font-size: 14px;
+    }
+    .Add-Profile-container {
+     width: 80%;
+     margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .add-input-1{
+     width: 100%;
+     margin-right: 10pc;
+     margin-left: -11px;
+     font-size: 14px;
+    }
+    .Add-Profile-container {
+        width: 93%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .add-input-1{
+        width: 90%;
+        margin-right: 8pc;
+        margin-left: 6px;
+        font-size: 13px;
+    }
+    .Add-Profile-container {
+        width: 93%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .add-input-1{
+        width: 108%;
+        margin-right: 4pc;
+        margin-left: -19px;
+        font-size: 13px;
+    }
+    .Add-Profile-container {
+        width: 98%;
+        margin-left: 0%;
+    }
+}
+

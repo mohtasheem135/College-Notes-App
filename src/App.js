@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router";
 import Home from "./component/Home/Home";
-import Upload from "./component/upload/Upload"
+import Upload from "./component/upload/Upload";
 import List from "./component/List/List";
 import Add from "./component/Add/Add";
 import AddNote from "./component/Add Note/AddNote";
@@ -14,6 +14,9 @@ import UserRegister from "./component/User/User Register/UserRegister";
 import UserHome from "./component/User/User Home/UserHome";
 import AddSemester from "./component/Add Semester/AddSemester";
 import PYQ from "./component/PYQ/PYQ";
+import AddProfile from "./component/Profile/AddProfile";
+import MyProfile from "./component/My Profile/MyProfile";
+import EditProfile from "./component/Edit Profile/EditProfile";
 
 const App = () => {
   return (
@@ -33,9 +36,12 @@ const App = () => {
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/addsem" element={<AddSemester />} />
         <Route path="/pyq" element={<PYQ />} />
+        <Route path="/addprofile" element={<AddProfile />} />
+        <Route path="myprofile" element={<MyProfile />} />
+        <Route path="editprofile" element={<EditProfile />} />
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

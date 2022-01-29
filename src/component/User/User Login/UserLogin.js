@@ -12,69 +12,45 @@ const UserLogin = () => {
 
     const navigate = useNavigate();
 
-    const [data, setData] = useState("");
-
-    const values = {
-        name:'',
-        roll:''
-    }
-    const [initialState, setInitialState] = useState("");
-    const { name, roll } = initialState;
-
-
-
+    const [loginId, setLoginId] = useState("");
 
     const handelSubmit = (e)=>{
         e.preventDefault()
-        // console.log(initialState.password)
 
-        console.log(DataNavigation.getData('User_Login_Name'))
-        console.log(DataNavigation.getData('User_Login_Roll'))
+        localStorage.setItem('user_login_roll',loginId.roll);
+        localStorage.setItem('User_Name', loginId.name)
+        if(loginId.roll ===DataNavigation.getData('User_Login_Roll') && loginId.passCode===DataNavigation.getData('User_Login_Pass_Code')){
+            navigate("/userhome")
+        } else {
+            alert("Incorrect Roll Number or Pass Code");
+            window.location.reload();
+        }
 
-        
-        {Object.keys(data).map((id, index)=>{
-            console.log("THISSSSSS ------"+data[id].name)
-            localStorage.setItem('User_Name', data[id].name)
-            if(data[id].roll==DataNavigation.getData('User_Login_Roll') && DataNavigation.getData('User_Login_Pass_Code')==localStorage.getItem('var')){
-                navigate(`/userhome`)
-            }
-            else {
-                alert("Incorrect Roll Number")
-                window.location.reload();
-                // navigate("/")
-            }
-        })}
-
-        
     }
-
-localStorage.setItem('var','CSE#1')
-
 
     const handelInputChange_Roll = (e) => {
         DataNavigation.setData('User_Login_Roll', e.target.value)
 
-        fireDB.database().ref().child(`User Panel of PDF App`).child(`${e.target.value}`).on("value", (snapshot) => {
+        fireDB.database().ref().child(`Profile/${e.target.value}`).on("value", (snapshot) => {
             if (snapshot.val() != null) {
-                setData({
-                    ...snapshot.val()
-                })
+                setLoginId({
+                    ...snapshot.val(),
+                });
             } else {
                 snapshot({});
             }
-        })
+        });
     }
+
     const handelInputChange_pass=(e)=>{
         DataNavigation.setData('User_Login_Pass_Code', e.target.value);
-        console.log(e.target.value)
     }
-
-    
-
 
     function register(){
         navigate("/userregister")
     }
+
+
     return (
         <div>
             <Navbar/>
@@ -82,13 +58,10 @@ localStorage.setItem('var','CSE#1')
             <div className="admin-login-body">
                 <div className="login-input-container">
                     <form className="login-form">
-                    {/* <input className="input-login" name="name" type="text" placeholder="Enter Name" onChange={handelInputChange_Name} /> */}
                     <input className="input-login" name="roll" type="text" placeholder="Enter Your Roll no." onChange={handelInputChange_Roll} />
                     <input className="input-login" name="passcode" type="text" placeholder="Enter the Pass Code" onChange={handelInputChange_pass} />
-                    {/* <input className="input-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange_Email} /> */}
-                    {/* <input  className="input-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange_Password} /> */}
                     <input onClick={handelSubmit} className="input-login input-btn" type="submit" value="LogIn" />
-                    {/* <input onClick={register} className="input-login input-btn" type="submit" value="Register" /> */}
+                    <input onClick={register} className="input-login input-btn" type="submit" value="Register" />
                     </form>
                 </div>
             </div>
