@@ -54,7 +54,7 @@
     border-radius: 30px;
     font-family: 'Raleway', sans-serif;
     position: relative;
-    animation: myymove 7s infinite;
+    /* animation: myymove 7s infinite; */
 }
 
 @keyframes myymove {

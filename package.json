@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "build": "^0.1.4",
     "countapi-js": "^1.0.2",
     "cryptr": "^6.0.2",
     "firebase": "^9.6.1",
