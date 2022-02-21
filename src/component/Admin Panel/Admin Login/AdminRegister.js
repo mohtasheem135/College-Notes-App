@@ -49,7 +49,7 @@ const AdminRegister = () => {
     return (
         <div>
             <Navbar/>
-            <img src={img_2} className="VI-admin-register-image" />
+            <img src={img_2} className="VI-admin-register-image" alt='admin' />
             <div className="admin-login-body">
                 <div className="login-admin-input-container">
                     <form className="login-admin-form">
@@ -57,7 +57,7 @@ const AdminRegister = () => {
                         <input className="input-admin-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange} />
                         <input className="input-admin-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange} />
                         <input onClick={handelSubmit} className="input-admin-btn" type="submit" value="Register" />
-                        <input onClick={register} className="input-admin-btn" type="submit" value="LogIn" />
+                        {/* <input onClick={register} className="input-admin-btn" type="submit" value="LogIn" /> */}
 
                     </form>
                 </div>

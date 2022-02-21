@@ -14,7 +14,7 @@ const AdminLogin = () => {
     const [data, setData] = useState("");
 
     const values = {
-        name:'',
+        name: '',
         email: '',
         password: ''
     }
@@ -24,7 +24,7 @@ const AdminLogin = () => {
 
 
 
-    const handelSubmit = (e)=>{
+    const handelSubmit = (e) => {
         e.preventDefault()
         // console.log(initialState.password)
 
@@ -34,17 +34,19 @@ const AdminLogin = () => {
 
         localStorage.setItem('Name', DataNavigation.getData('Login_Name'))
 
-        {Object.keys(data).map((id, index)=>{
-            console.log(data[id])
-            if(data[id].email==DataNavigation.getData('Login_Email') && data[id].password==DataNavigation.getData('Login_Password')){
-                navigate(`/upload`)
-            }
-            else {
-                alert("Incorrect Password or Email")
-                window.location.reload();
-                // navigate("/")
-            }
-        })}
+        {
+            Object.keys(data).map((id, index) => {
+                console.log(data[id])
+                if (data[id].email === DataNavigation.getData('Login_Email') && data[id].password === DataNavigation.getData('Login_Password')) {
+                    navigate(`/upload`)
+                }
+                else {
+                    alert("Incorrect Password or Email")
+                    window.location.reload();
+                    // navigate("/")
+                }
+            })
+        }
     }
     const handelInputChange_Name = (e) => {
         DataNavigation.setData('Login_Name', e.target.value);
@@ -67,24 +69,24 @@ const AdminLogin = () => {
         DataNavigation.setData('Login_Password', e.target.value)
     }
 
-    
 
 
-    function register(){
+
+    function register() {
         navigate("/adminregister")
     }
     return (
         <div>
-            <Navbar/>
-            <img src={img_1} className="VI-login-image" />
+            <Navbar />
+            <img src={img_1} className="VI-login-image" alt='login' />
             <div className="admin-login-body">
                 <div className="login-admin-input-container">
                     <form className="login-admin-form">
-                    <input className="input-admin-login" name="name" type="email" placeholder="Enter Name" onChange={handelInputChange_Name} />
-                    <input className="input-admin-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange_Email} />
-                    <input  className="input-admin-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange_Password} />
-                    <input onClick={handelSubmit} className=" input-admin-btn" type="submit" value="LogIn" />
-                    {/* <input onClick={register} className=" input-admin-btn" type="submit" value="Register" /> */}
+                        <input className="input-admin-login" name="name" type="email" placeholder="Enter Name" onChange={handelInputChange_Name} />
+                        <input className="input-admin-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange_Email} />
+                        <input className="input-admin-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange_Password} />
+                        <input onClick={handelSubmit} className=" input-admin-btn" type="submit" value="LogIn" />
+                        {/* <input onClick={register} className=" input-admin-btn" type="submit" value="Register" /> */}
                     </form>
                 </div>
             </div>

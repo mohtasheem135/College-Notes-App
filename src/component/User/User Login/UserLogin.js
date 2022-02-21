@@ -46,15 +46,15 @@ const UserLogin = () => {
         DataNavigation.setData('User_Login_Pass_Code', e.target.value);
     }
 
-    function register(){
-        navigate("/userregister")
-    }
+    // function register(){
+    //     navigate("/userregister")
+    // }
 
 
     return (
         <div>
             <Navbar/>
-            <img src={img_1} className="VI-user-login-image" />
+            <img src={img_1} className="VI-user-login-image" alt='login' />
             <div className="admin-login-body">
                 <div className="login-input-container">
                     <form className="login-form">

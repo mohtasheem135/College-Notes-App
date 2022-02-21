@@ -27,10 +27,10 @@ const MyProfile = () => {
 
   return (
     <div>
-      {localStorage.getItem('User_Name')!="" ? null: navigate("/") }
+      {localStorage.getItem('User_Name')!=="" ? null: navigate("/") }
       <UserNavbar />
       <div className="myprofile-img-container">
-        <img className="myprofile-img" src={img_1} />
+        <img className="myprofile-img" src={img_1} alt="profile" />
       </div>
       <div className="myprofile-head-container">
         <p className="myprofile-head">Hello, {data.name} 👋</p>

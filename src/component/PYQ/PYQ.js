@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DataNavigation } from 'react-data-navigation';
 import fireDB from '../../firebase';
-import Footer from '../Footer/Footer';
 import "./pyq.css";
 import Navbar from '../Navbar/Navbar';
 

@@ -9,12 +9,12 @@ const UserRegister = () => {
 
     const navigate = useNavigate();
 
-    const values = {
-        name: '',
-        roll: ''
-    }
+    // const values = {
+    //     name: '',
+    //     roll: ''
+    // }
     const [initialState, setInitialState] = useState("");
-    const { name, roll } = initialState;
+    // const { name, roll } = initialState;
 
     const handelSubmit = (e) => {
         e.preventDefault();
@@ -41,14 +41,14 @@ const UserRegister = () => {
     }
 
 
-    function register() {
-        navigate("/userlogin")
-    }
+    // function register() {
+    //     navigate("/userlogin")
+    // }
 
     return (
         <div>
             <Navbar/>
-            <img src={img_2} className="VI-user-register-image" />
+            <img src={img_2} className="VI-user-register-image" alt='register' />
             <div className="admin-login-body">
                 <div className="login-input-container">
                     <form className="login-form">
@@ -57,7 +57,7 @@ const UserRegister = () => {
                         {/* <input className="input-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange} /> */}
                         {/* <input className="input-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange} /> */}
                         <input onClick={handelSubmit} className="input-login input-btn" type="submit" value="Register" />
-                        <input onClick={register} className="input-login input-btn" type="submit" value="LogIn" />
+                        {/* <input onClick={register} className="input-login input-btn" type="submit" value="LogIn" /> */}
 
                     </form>
                 </div>

@@ -18,7 +18,7 @@ const Add = () => {
 
     useEffect(() => {
         fireDB.database().ref().child(`Semester`).on("value", (snapshot) => {
-            if (snapshot.val() != null) {
+            if (snapshot.val() !== null) {
                 setData({
                     ...snapshot.val()
                 })
@@ -31,7 +31,6 @@ const Add = () => {
     }, [])
 
     const handleInputChange = (e) => {
-        // console.log(e.target.value);
         setSubName(e.target.value);
     }
 
@@ -80,7 +79,7 @@ const Add = () => {
             <br /><br /><br /><br />
             <input onChange={handleInputChange} className="add-input" value={subName} type="text" placeholder="Add the Teacher" />
             <button onClick={handleSubmit} className="add-btn">Submit</button>
-            {/* <button onClick={addSemester} className="add-btn">Add Semester</button> */}
+            <button onClick={addSemester} className="add-btn">Add Semester</button>
 
 
         </div>

@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import Navbar from '../../Navbar/Navbar';
+import React, { useEffect, useState } from 'react';
 import fireDB from "../../../firebase";
 import "./userHome.css";
 import { DataNavigation } from 'react-data-navigation';
 import { useNavigate } from 'react-router';
-import img_1 from "./Images/BG-3.jpg"
-import img_2 from "./Images/VI-2.png"
-import img_3 from "./Images/giphy-2.gif"
 import img_4 from "./Images/VI-6.png"
 import img_5 from "./Images/VI-4-1.png"
 import img_6 from "./Images/VI-7.png"
@@ -66,7 +62,7 @@ const UserHome = () => {
     return (
         
         <div className="main-home">
-            {localStorage.getItem('User_Name')!="" ? null : navigate("/") }
+            {localStorage.getItem('User_Name')!=="" ? null : navigate("/") }
             {/* {localStorage.getItem('User_Name')!="" ? <UserNavbar/> : <Navbar/> } */}
             {/* <Navbar/> */}
             <UserNavbar />
@@ -99,10 +95,10 @@ const UserHome = () => {
 
             {/* <img src={img_2} className="vector-image" /> */}
             {/* <img src={img_3} className="gif-image" /> */}
-            <img src={img_4} className="vector-plane-image" /> 
-            <img src={img_5} className="vector-image" />
-            <img src={img_6} className="vector-plane-image-1" />
-            <img src={img_7} className="vector-plane-image-2" />
+            <img src={img_4} className="vector-plane-image" alt='plane-1' /> 
+            <img src={img_5} className="vector-image" alt='vect-1' />
+            <img src={img_6} className="vector-plane-image-1" alt='plane-2' />
+            <img src={img_7} className="vector-plane-image-2" alt='plane-3' />
             </div>
     )
 }

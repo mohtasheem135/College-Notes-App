@@ -25,10 +25,7 @@ const AddSemester = () => {
         })
 
 
-    }, [])
-    // Object.keys(data).map((id, index) => {
-    //     console.log(data[id]);
-    // })
+    }, []);
 
     const handelInputChange = (e) => {
         // console.log(e.target.value);
@@ -53,9 +50,9 @@ const AddSemester = () => {
     }
     return (
         <div>
-            {localStorage.getItem('Name') != "" ? null : navigate("/error")}
+            {localStorage.getItem('Name') !== "" ? null : navigate("/error")}
             <AdminNavbar />
-            <img src={img_1} className="upload-image" />
+            <img src={img_1} className="upload-image" alt='image' />
             <input onChange={handelInputChange} className="add-input add-semester-input" type="text" placeholder="Eg. 4th Semester" />
             <button onClick={handelClick} className="add-btn add-semester-btn">Submit</button>
             <button onClick={addCategory} className="add-btn add-semester-btn">Add Category</button>

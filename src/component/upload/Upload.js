@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Routes } from "react-router";
 import fireDB from '../../firebase';
-import Navbar from '../Navbar/Navbar';
 import "./upload.css";
 import { DataNavigation } from 'react-data-navigation';
 import AdminNavbar from '../Admin Panel/Admin Navbar/AdminNavbar';
@@ -79,7 +77,7 @@ function FileUploadPage() {
 
   return (
     <div>
-      {localStorage.getItem('Name') != "" ? null : navigate("/error")}
+      {localStorage.getItem('Name') !== "" ? null : navigate("/error")}
       <AdminNavbar />
       <br /><br />
 

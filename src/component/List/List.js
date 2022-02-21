@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react'
 import { useEffect, useState } from 'react/cjs/react.development'
 import fireDB from '../../firebase';
@@ -6,16 +5,12 @@ import { DataNavigation } from 'react-data-navigation';
 import Navbar from '../Navbar/Navbar';
 import UserNavbar from "../User/User Navbar/UserNavbar"
 import "./list.css";
-import { useNavigate } from 'react-router';
-import { Link } from 'react-router-dom';
 import img_1 from "./Images/VI-2.jpg";
 import Footer from '../Footer/Footer';
 
 const List = () => {
     const [data, setData] = useState({});
     const [values, setValues] = useState({});
-    const [dLink, setDLink] = useState("");
-    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -61,9 +56,9 @@ const List = () => {
         
         <div>
             
-            {localStorage.getItem('User_Name')!="" ? <UserNavbar /> : <Navbar/> }
+            {localStorage.getItem('User_Name')!=="" ? <UserNavbar /> : <Navbar/> }
             <h2 className="List-head">~ {DataNavigation.getData('Semester')} ~</h2><hr />
-            <img src={img_1} className="List-image" />
+            <img src={img_1} className="List-image" alt='list' />
             {/* <div className="list-item"> */}
             {Object.keys(data).map((id, index) => {
                 return (

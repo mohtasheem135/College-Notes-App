@@ -62,7 +62,7 @@ const EditProfile = () => {
 
   return (
     <div>
-      {localStorage.getItem('User_Name')!="" ? null: navigate("/") }
+      {localStorage.getItem('User_Name')!=="" ? null: navigate("/") }
       <UserNavbar /> 
       <br /><br /><br />
       <div className="Add-Profile-container">

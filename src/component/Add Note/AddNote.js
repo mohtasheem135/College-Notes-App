@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./addNote.css";
 import fireDB from '../../firebase';
-import Navbar from '../Navbar/Navbar';
 import { DataNavigation } from 'react-data-navigation';
 import AdminNavbar from '../Admin Panel/Admin Navbar/AdminNavbar';
 import { useNavigate } from 'react-router';
