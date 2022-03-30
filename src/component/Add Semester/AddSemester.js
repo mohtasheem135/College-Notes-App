@@ -33,16 +33,16 @@ const AddSemester = () => {
     }
 
     const handelClick = () => {
-            fireDB.database().ref().child('Semester').push(DataNavigation.getData('add_semester_name'), (err) => {
-                if (err) {
-                    console.log(err);
-                    alert(`Some error Occured !!!`);
-                } else {
-                    alert(`${DataNavigation.getData('add_semester_name')} added successfully !!!!!`)
-                    navigate("/add");
-                }
-            })
-        
+        fireDB.database().ref().child('Semester').push(DataNavigation.getData('add_semester_name'), (err) => {
+            if (err) {
+                console.log(err);
+                alert(`Some error Occured !!!`);
+            } else {
+                alert(`${DataNavigation.getData('add_semester_name')} added successfully !!!!!`)
+                navigate("/add");
+            }
+        })
+
     }
 
     const addCategory = () => {

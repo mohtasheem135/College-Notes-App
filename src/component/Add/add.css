@@ -80,6 +80,18 @@
     margin-top: 36px;
 }
 
+@media only screen and (max-width: 750px){
+    .add-btn{
+        display: flex;
+        margin-left: 37%;
+    }
+
+    .add-input{
+        width: 50%;
+    }
+
+}
+
 @media only screen and (max-width: 500px){
     .choose-add-option{
         width: 30%;
@@ -94,17 +106,11 @@
         margin-left: 45%;
         margin-top: 74px;
     }
-    .add-input{
-        padding: 7px 5px;
-        margin-left: 42%;
-        width: 34%;
-        margin-top: 28%;
-        font-size: 13px;
-    }
     .add-btn{
-        padding: 7px 20px;
-    margin-top: 20px;
-    font-size: 13px;
+    }
+
+    .add-input{
+        margin-top: 145px;
     }
 }
 
@@ -118,12 +124,12 @@
         margin-top: 22px;
         font-size: 13px;
     }
-    .add-input{
-        font-size: 12px;
-    }
+
     .add-btn{
-        padding: 7px 12px;
-        margin-top: 20px;
-        font-size: 11px;
+        
+    }
+
+    .add-input{
+        margin-top: 300px;
     }
 }

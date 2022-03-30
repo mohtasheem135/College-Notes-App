@@ -80,7 +80,7 @@ const List = () => {
                 )
             })}
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
