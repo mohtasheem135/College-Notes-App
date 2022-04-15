@@ -28,14 +28,14 @@
 }
 
 .line-1{
-  margin-top: 27px;
+  margin-top: 13px;
 }
 
 .upload-btn-choose{
   margin-left: 28px;
     padding: 9px 27px;
     font-size: 19px;
-    margin-top: 25px;
+    margin-top: 5px;
     border: none;
     border-bottom: 2px solid orangered;
     box-shadow: 2px 3px 6px rgb(255, 68, 0);
@@ -51,7 +51,7 @@
 }
 
 .line-2{
-  margin-top: 30px;
+  margin-top: 13px;
 }
 
 .custom-file-input::-webkit-file-upload-button {
@@ -93,13 +93,15 @@
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     border: none;
-    border-bottom: 2px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(1, 255, 170);
 }
 
 .upload-input-btn:hover{
     cursor: pointer;
-    background-color: rgb(161, 161, 161);
-    color: white;
+    background-color: rgb(205, 255, 159);
+    color: rgb(78, 78, 78);
+    box-shadow: 2px 1px 6px black;
 }
 
 @media only screen and (max-width: 500px){

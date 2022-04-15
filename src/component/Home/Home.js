@@ -58,8 +58,8 @@ const Home = () => {
     return (
         <div className="main-home">
             <Navbar />
-            <VisibilityIcon className="viewIcon" />
-            <h3 className="views">{count}</h3>
+            {/* <VisibilityIcon className="viewIcon" /> */}
+            {/* <h3 className="views">{count}</h3> */}
             <div className="notice-home-section">
                 <h1 className="notice-home-head">Notice</h1>
                 {Object.keys(notice).map((id, index) => {

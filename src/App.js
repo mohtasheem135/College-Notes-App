@@ -12,10 +12,15 @@ import NotAdmin from "./component/Error Page/NotAdmin";
 import UserLogin from "./component/User/User Login/UserLogin";
 import UserRegister from "./component/User/User Register/UserRegister";
 import UserHome from "./component/User/User Home/UserHome";
-import AddSemester from "./component/Add Semester/AddSemester";
+import AddSemester from "./component/Add/Add Semester/AddSemester";
 import PYQ from "./component/PYQ/PYQ";
 import MyProfile from "./component/My Profile/MyProfile";
 import EditProfile from "./component/Edit Profile/EditProfile";
+import AddYear from "./component/Add/Add Year/AddYear";
+import AddTeacher from "./component/Add/Add Teacher/AddTeacher";
+import AddAdmin from "./component/Add/Add Admin/AddAdmin";
+import AddStudent from "./component/Add/Add Student/AddStudent";
+import StudentDB from "./component/Add/StudentDB/StudentDB";
 
 const App = () => {
   return (
@@ -34,9 +39,14 @@ const App = () => {
         <Route path="userregister" element={<UserRegister />} />
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/addsem" element={<AddSemester />} />
+        <Route path="/addYear" element={<AddYear />} />
+        <Route path="/addTeacher" element={<AddTeacher />} />
         <Route path="/pyq" element={<PYQ />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="editprofile" element={<EditProfile />} />
+        <Route path="/addadmin" element={<AddAdmin />} />
+        <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/studentdb" element={<StudentDB />} />
       </Routes>
     </div>
   );

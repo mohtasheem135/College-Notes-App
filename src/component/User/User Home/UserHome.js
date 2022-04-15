@@ -17,7 +17,7 @@ const UserHome = () => {
     const navigate = useNavigate();
 
     useEffect(()=>{
-        fireDB.database().ref().child(`Semester`).on("value", (snapshot) => {
+        fireDB.database().ref().child(`Test Admin/Semester/${localStorage.getItem('Selected_Year')}/${localStorage.getItem('Selected_Department')}`).on("value", (snapshot) => {
             if (snapshot.val() != null) {
                 setData({
                     ...snapshot.val()
@@ -54,6 +54,7 @@ const UserHome = () => {
     const handelClick=(e)=>{
         console.log(e.target.value);
         DataNavigation.setData('Semester',e.target.value);
+        localStorage.setItem('this-Semester', e.target.value)
         navigate("list");
         
     }

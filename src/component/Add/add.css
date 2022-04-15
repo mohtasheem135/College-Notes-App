@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+.addimg_1{
+    position: absolute;
+    z-index: -1;
+    width: 48%;
+    margin-left: 25%;
+    visibility: hidden;
+}
+
 
 .choose-add-option{
     /* border: 2px solid black; */
@@ -35,7 +43,7 @@
     padding: 7px 20px;
     margin-left: 36%;
     width: 23%;
-    margin-top: 18%;
+    margin-top: 6%;
     border: none;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -78,6 +86,61 @@
     z-index: -1;
     margin-left: 36%;
     margin-top: 36px;
+}
+
+.add-container{
+    
+}
+
+.add-box{
+    border: 2px solid grey;
+    padding: 35px;
+    width: 19%;
+    height: 10pc;
+    margin-left: 101px;
+    margin-top: 35px;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 5px;
+    display: inline-grid;
+    /* background-color: grey; */
+    /* opacity: 0.8; */
+    /* display: inline-table; */
+}
+
+.add-ct-btn{
+    opacity: 1;
+    border: none;
+    /* padding: 8px 19%; */
+    box-shadow: 2px 1px 6px grey;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: bold; */
+    font-size: 17px;
+    /* margin-left: 80px; */
+}
+
+.add-ct-btn:hover{
+    cursor: pointer;
+    box-shadow: 2px 1px 26px rgb(73, 73, 73);
+    font-weight: bolder;
+    background-color: rgb(253, 223, 87);
+}
+
+.add-para{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.add-box-1{
+    
+}
+
+.add-box-2{
+
+}
+
+.add-box-3{
+
 }
 
 @media only screen and (max-width: 750px){

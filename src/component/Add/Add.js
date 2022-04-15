@@ -5,7 +5,7 @@ import { DataNavigation } from 'react-data-navigation';
 import { useState } from 'react/cjs/react.development';
 import AdminNavbar from '../Admin Panel/Admin Navbar/AdminNavbar';
 import { useNavigate } from 'react-router';
-import img_1 from "./Images/VI-1.jpg";
+import img_1 from "./Images/VI-2.jpg";
 
 
 const Add = () => {
@@ -55,8 +55,28 @@ const Add = () => {
         })
     }
 
-    const addSemester=()=>{
+    const addSemester = () => {
         navigate("/addsem");
+    }
+
+    const addYear = () => {
+        navigate("/addYear")
+    }
+
+    const addTeacher = () => {
+        navigate("/addTeacher")
+    }
+
+    const AddAdmin = () => {
+        navigate('/addadmin');
+    }
+
+    const addStudent = () => {
+        navigate('/addstudent')
+    }
+
+    const studentDB = () => {
+        navigate('/studentdb')
     }
 
 
@@ -66,21 +86,58 @@ const Add = () => {
         <div>
             {localStorage.getItem('Name') != "" ? null : navigate("/error")}
             <AdminNavbar />
-            <img src={img_1} className="upload-image" />
-            <br /><br />
 
-            <div className="choose-add-option">
-                {Object.keys(data).map((id, index) => {
-                    return (
-                        <button className="choose-add-btn" onClick={choose} value={data[id]}>{data[id]}</button>
-                    )
-                })}
+<img src={img_1} className='addimg_1' />
+
+            <div className='add-container'>
+
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        View the students Database
+                    </p>
+                    <br />
+                    <button onClick={studentDB} className='add-ct-btn'>View</button>
+                </div>
+
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        You can add the New Year here.....
+                    </p>
+                    <br />
+                    <button onClick={addYear} className='add-ct-btn'>Add Year</button>
+                </div>
+
+                <div className='add-box add-box-2'>
+                    <p className='add-para'>
+                        You can Add new semester here...
+                    </p>
+                    <br />
+                    <button onClick={addSemester} className='add-ct-btn'>Add Semester</button>
+                </div>
+                <div className='add-box add-box-1'>
+                    <p className='add-para'>
+                        Add Subject/Teacher name...
+                    </p>
+                    <br />
+                    <button onClick={addTeacher} className='add-ct-btn'>Add Teacher</button>
+                </div>
+
+
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        Add the New Admin ....
+                    </p>
+                    <br />
+                    <button onClick={AddAdmin} className='add-ct-btn'>Add Admin</button>
+                </div>
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        You can add the students here.....
+                    </p>
+                    <br />
+                    <button onClick={addStudent} className='add-ct-btn'>Add Student</button>
+                </div>
             </div>
-            <br /><br /><br /><br />
-            <input onChange={handleInputChange} className="add-input" value={subName} type="text" placeholder="Add the Teacher" />
-            <button onClick={handleSubmit} className="add-btn">Submit</button>
-            <button onClick={addSemester} className="add-btn">Add Semester</button>
-
 
         </div>
     )

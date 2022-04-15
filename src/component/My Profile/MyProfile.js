@@ -12,7 +12,7 @@ const MyProfile = () => {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    fireDB.database().ref().child(`Profile/${localStorage.getItem('user_login_roll')}`).on("value", (snapshot) => {
+    fireDB.database().ref().child(`Test Admin/Students DB/${localStorage.getItem('Selected_Year')}/${localStorage.getItem('Selected_Department')}/${localStorage.getItem('user_login_roll')}`).on("value", (snapshot) => {
       if (snapshot.val() != null) {
         setData({
           ...snapshot.val(),
@@ -23,6 +23,8 @@ const MyProfile = () => {
     });
 
   }, []);
+
+  console.log(data.roll)
 
 
   return (
@@ -65,8 +67,12 @@ const MyProfile = () => {
           <p className="myprofile-details-data"> {data.college}</p>
         </div>
         <div className="myprofile-details">
+          <p className="myprofile-details-tag">Address :- </p>
+          <p className="myprofile-details-data"> {data.address}</p>
+        </div>
+        <div className="myprofile-details">
           <p className="myprofile-details-tag">Pass Code :- </p>
-          <p className="myprofile-details-data"> {data.passCode}</p>
+          <p className="myprofile-details-data"> {data.passcode}</p>
         </div>
       </div>
 

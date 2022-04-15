@@ -16,7 +16,7 @@ const List = () => {
 
         // console.log(DataNavigation.getData('Semester'))
 
-            fireDB.database().ref().child(`Teacher/${DataNavigation.getData('Semester')}`).on("value", (snapshot) => {
+            fireDB.database().ref().child(`Test Admin/Teacher/${localStorage.getItem('Selected_Year')}/${localStorage.getItem('Selected_Department')}/${localStorage.getItem('this-Semester')}`).on("value", (snapshot) => {
                 if (snapshot.val() != null) {
                     setData({
                         ...snapshot.val()
@@ -31,7 +31,7 @@ const List = () => {
         // console.log(DataNavigation.getData('teacher_name_folder'));
 
         // {<h1><a href={e.target.value} >{e.target.value}</a></h1>}
-        const link = fireDB.storage().ref().child(`PDF Folder/${DataNavigation.getData('Semester')}/${DataNavigation.getData('teacher_name_folder')}/${e.target.value}`)
+        const link = fireDB.storage().ref().child(`PDF Folder-3/${localStorage.getItem('Selected_Year')}/${localStorage.getItem('Selected_Department')}/${localStorage.getItem('this-Semester')}/${DataNavigation.getData('teacher_name_folder')}/${e.target.value}`)
         await link.getDownloadURL().then((URL => {
             console.log(URL);
             // setDLink(URL);
@@ -45,7 +45,7 @@ const List = () => {
         // console.log(e.target.value);
         DataNavigation.setData('teacher_name_folder', e.target.value);
 
-        fireDB.storage().ref().child(`PDF Folder/${DataNavigation.getData('Semester')}/${e.target.value}`).listAll().then((snap => {
+        fireDB.storage().ref().child(`PDF Folder-3/${localStorage.getItem('Selected_Year')}/${localStorage.getItem('Selected_Department')}/${localStorage.getItem('this-Semester')}/${e.target.value}`).listAll().then((snap => {
             // console.log(snap._delegate.items[0].name);
             setValues(snap._delegate.items)
         }))
@@ -57,7 +57,7 @@ const List = () => {
         <div>
             
             {localStorage.getItem('User_Name')!=="" ? <UserNavbar /> : <Navbar/> }
-            <h2 className="List-head">~ {DataNavigation.getData('Semester')} ~</h2><hr />
+            <h2 className="List-head">~ {localStorage.getItem('this-Semester')} ~</h2><hr />
             <img src={img_1} className="List-image" alt='list' />
             {/* <div className="list-item"> */}
             {Object.keys(data).map((id, index) => {

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+.db-list{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    background-color: lightgray;
+    border-radius: 2px;
+    border-bottom: 2px solid brown;
+    align-items: center;
+    cursor: default;
+    height: 3pc;
+    
+}
+
+.db-list-name{
+    margin-left: 50px;
+    font-size: 19px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.db-list-btn{
+    margin-right: 60px; 
+    padding: 1px 62px;
+    height: 2pc;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    font-size: 19px;
+    border: none;
+    background-color: rgb(255, 149, 78);
+    border-radius: 6px;
+}
+
+.db-list-btn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 125, 38);
+    border: lightgray;
+    color: white;
+}
+
+.main-db{
+    width: 23pc;
+    height: 6pc;
+    background-color: rgb(155, 250, 131);
+    z-index: 1;
+    box-shadow: -2px 1px 12px rgb(0, 0, 0);
+    border-radius: 5px;
+    
+
+}
+
+.main-db-p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
