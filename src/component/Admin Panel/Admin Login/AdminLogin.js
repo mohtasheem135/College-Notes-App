@@ -38,7 +38,8 @@ const AdminLogin = () => {
             Object.keys(data).map((id, index) => {
                 console.log(data[id])
                 if (data[id].email === DataNavigation.getData('Login_Email') && data[id].password === DataNavigation.getData('Login_Password')) {
-                    navigate(`/upload`)
+                    // navigate(`/upload`)
+                    navigate(`/add`)
                 }
                 else {
                     alert("Incorrect Password or Email")

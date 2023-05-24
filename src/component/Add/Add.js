@@ -78,6 +78,12 @@ const Add = () => {
     const studentDB = () => {
         navigate('/studentdb')
     }
+    const uploadNotes = () => {
+        navigate('/upload')
+    }
+    const uploadQuestions = () => {
+        navigate('/uploadquestions')
+    }
 
 
 
@@ -87,7 +93,7 @@ const Add = () => {
             {localStorage.getItem('Name') != "" ? null : navigate("/error")}
             <AdminNavbar />
 
-<img src={img_1} className='addimg_1' />
+            <img src={img_1} className='addimg_1' />
 
             <div className='add-container'>
 
@@ -136,6 +142,20 @@ const Add = () => {
                     </p>
                     <br />
                     <button onClick={addStudent} className='add-ct-btn'>Add Student</button>
+                </div>
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        You can upload the notes here.....
+                    </p>
+                    <br />
+                    <button onClick={uploadNotes} className='add-ct-btn'>Upload Notes</button>
+                </div>
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        You can upload the question paper here.....
+                    </p>
+                    <br />
+                    <button onClick={uploadQuestions} className='add-ct-btn'>Upload Questions</button>
                 </div>
             </div>
 

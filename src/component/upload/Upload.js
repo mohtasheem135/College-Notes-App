@@ -20,7 +20,7 @@ function FileUploadPage() {
     setIsFilePicked(true);
   };
 
-  
+
 
   useEffect(() => {
     fireDB.database().ref().child(`Test Admin/Year`).on("value", (snapshot) => {
@@ -48,7 +48,7 @@ function FileUploadPage() {
       }
     })
     DataNavigation.setData('Year_Name', e.target.value);
-    console.log("Year : - "+e.target.value);
+    console.log("Year : - " + e.target.value);
     e.target.style.backgroundColor = "#ff7b59";
     e.target.style.color = "#ffffff";
     // console.log(value);
@@ -68,7 +68,7 @@ function FileUploadPage() {
       }
     })
     DataNavigation.setData('department_name', e.target.value);
-    console.log("Department : - "+e.target.value);
+    console.log("Department : - " + e.target.value);
     e.target.style.backgroundColor = "#ff7b59";
     e.target.style.color = "#ffffff";
     // console.log("Year_Name"+DataNavigation.getData('Year_Name'));
@@ -117,6 +117,8 @@ function FileUploadPage() {
       {localStorage.getItem('Name') !== "" ? null : navigate("/error")}
       <AdminNavbar />
 
+      <h1>Upload Question</h1>
+
       <p className="label-para-1">Click the button under which you want to add the file.....</p>
 
       {Object.keys(data).map((id, index) => {
@@ -124,13 +126,13 @@ function FileUploadPage() {
           <button className="upload-btn" onClick={selection1} value={data[id]}>{data[id]}</button>
         )
       })}
-      <hr className="line-1"/>
+      <hr className="line-1" />
       {/* <p className="label-para-1">Choose where you want to add the PDF . . .</p> */}
       {Object.keys(value).map((id, index) => {
         return (
           <>
-         
-          <button className="upload-btn-choose" onClick={selection2} value={value[id]}>{value[id]}</button>
+
+            <button className="upload-btn-choose" onClick={selection2} value={value[id]}>{value[id]}</button>
           </>
         )
       })}
@@ -138,24 +140,24 @@ function FileUploadPage() {
       {Object.keys(value2).map((id, index) => {
         return (
           <>
-         
-          <button className="upload-btn-choose" onClick={selection3} value={value2[id]}>{value2[id]}</button>
+
+            <button className="upload-btn-choose" onClick={selection3} value={value2[id]}>{value2[id]}</button>
           </>
         )
       })}
-      <hr className="line-2"/>
+      <hr className="line-2" />
       {Object.keys(value3).map((id, index) => {
         return (
           <>
-         
-          <button className="upload-btn-choose" onClick={selection4} value={value3[id]}>{value3[id]}</button>
+
+            <button className="upload-btn-choose" onClick={selection4} value={value3[id]}>{value3[id]}</button>
           </>
         )
       })}
-      <hr className="line-2"/>
+      <hr className="line-2" />
       <div className="input-upload">
-        <input type="file" class="custom-file-input"  name="file" onChange={changeHandler} />
-       
+        <input type="file" class="custom-file-input" name="file" onChange={changeHandler} />
+
         {/* <p className="input-text">Drag and Drop the File here</p> */}
         {isFilePicked ? (
           <div>

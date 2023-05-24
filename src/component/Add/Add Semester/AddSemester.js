@@ -33,6 +33,7 @@ const AddSemester = () => {
     const handelClick = () => {
 
         fireDB.database().ref().child(`Test Admin/Semester/${DataNavigation.getData('year_name')}/${DataNavigation.getData('department')}`).push(DataNavigation.getData('add_semester_name'), (err) => {
+        // fireDB.database().ref().child(`Test Admin/Questions Semester`).push(DataNavigation.getData('add_semester_name'), (err) => {
             if (err) {
                 console.log(err);
                 alert(`Some error Occured !!!`);

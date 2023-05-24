@@ -34,7 +34,7 @@ const AddYear = () => {
     }
 
     const handelClick = () => {
-        fireDB.database().ref().child('Test Admin/Year').push(DataNavigation.getData('add_year'), (err) => {
+        fireDB.database().ref().child('Test Admin/Previous Years').push(DataNavigation.getData('add_year'), (err) => {
             if (err) {
                 console.log(err);
                 alert(`Some error Occured !!!`);

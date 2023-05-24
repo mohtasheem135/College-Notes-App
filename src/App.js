@@ -21,6 +21,7 @@ import AddTeacher from "./component/Add/Add Teacher/AddTeacher";
 import AddAdmin from "./component/Add/Add Admin/AddAdmin";
 import AddStudent from "./component/Add/Add Student/AddStudent";
 import StudentDB from "./component/Add/StudentDB/StudentDB";
+import UploadQuestions from "./component/Add/UploadQuestions/UploadQuestions";
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/addadmin" element={<AddAdmin />} />
         <Route path="/addstudent" element={<AddStudent />} />
         <Route path="/studentdb" element={<StudentDB />} />
+        <Route path="/uploadquestions" element={<UploadQuestions />} />
       </Routes>
     </div>
   );
