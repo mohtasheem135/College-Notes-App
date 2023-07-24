@@ -1,7 +1,8 @@
 import firebase from "firebase/compat/app";
-import "firebase/compat/storage";
-import "firebase/compat/auth";
+// import "firebase/compat/storage";
+// import "firebase/compat/auth";
 import "firebase/compat/database";
+import "firebase/compat/storage"
 
 
 
@@ -13,7 +14,7 @@ const firebaseConfig = {
     projectId: "login-2-f027c",
     storageBucket: "login-2-f027c.appspot.com",
     messagingSenderId: "1035913125382",
-    appId: "1:1035913125382:web:d7345a6383c46e0df1ad87"
+    appId: "1:1035913125382:web:51f19fc5ab50777af1ad87"
 };
 
 const fireDB = firebase.initializeApp(firebaseConfig);

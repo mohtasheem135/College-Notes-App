@@ -79,15 +79,20 @@ const Add = () => {
         navigate('/studentdb')
     }
 
-
-
+    const addNotes = () => {
+        navigate('/add-notes')
+    }
+    
+    const addPYQ = () => {
+        navigate('/add-pyq')
+    }
 
     return (
         <div>
             {localStorage.getItem('Name') != "" ? null : navigate("/error")}
             <AdminNavbar />
 
-<img src={img_1} className='addimg_1' />
+            <img src={img_1} className='addimg_1' />
 
             <div className='add-container'>
 
@@ -114,6 +119,7 @@ const Add = () => {
                     <br />
                     <button onClick={addSemester} className='add-ct-btn'>Add Semester</button>
                 </div>
+
                 <div className='add-box add-box-1'>
                     <p className='add-para'>
                         Add Subject/Teacher name...
@@ -122,7 +128,6 @@ const Add = () => {
                     <button onClick={addTeacher} className='add-ct-btn'>Add Teacher</button>
                 </div>
 
-
                 <div className='add-box add-box-3'>
                     <p className='add-para'>
                         Add the New Admin ....
@@ -130,12 +135,29 @@ const Add = () => {
                     <br />
                     <button onClick={AddAdmin} className='add-ct-btn'>Add Admin</button>
                 </div>
+
                 <div className='add-box add-box-3'>
                     <p className='add-para'>
                         You can add the students here.....
                     </p>
                     <br />
                     <button onClick={addStudent} className='add-ct-btn'>Add Student</button>
+                </div>
+
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        Upload Notes
+                    </p>
+                    <br />
+                    <button onClick={addNotes} className='add-ct-btn'>Add Notes</button>
+                </div>
+
+                <div className='add-box add-box-3'>
+                    <p className='add-para'>
+                        Upload PYQ
+                    </p>
+                    <br />
+                    <button onClick={addPYQ} className='add-ct-btn'>Add PYQ</button>
                 </div>
             </div>
 

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+.label-para-1 {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 27px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.upload-btn {
+    margin-left: 28px;
+    padding: 9px 27px;
+    font-size: 19px;
+    border: none;
+    border-bottom: 2px solid orangered;
+    box-shadow: 2px 3px 6px rgb(255, 68, 0);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.upload-btn:hover {
+    background-color: #db4d4d;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 3px 6px rgb(255, 131, 86);
+    background-color: rgb(255, 154, 117);
+}
+
+.line-1 {
+    margin-top: 13px;
+}
+
+.upload-btn-choose {
+    margin-left: 28px;
+    padding: 9px 27px;
+    font-size: 19px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid orangered;
+    box-shadow: 2px 3px 6px rgb(255, 68, 0);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.upload-btn-choose:hover {
+    background-color: #db4d4d;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 3px 6px rgb(255, 131, 86);
+    background-color: rgb(255, 154, 117);
+}
+
+.line-2 {
+    margin-top: 13px;
+}
+
+.input-upload-main {
+    /* border: 2px solid rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-upload {
+    /* border: 2px solid red; */
+    background-color: #f1b786;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 10pc;
+    border-radius: 8px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Select some files';
+    display: inline-flex;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 15px 38px;
+    background-color: grey;
+    /* margin-top: 60px; */
+    outline: none;
+    margin-left: 0%;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    /* text-shadow: 1px 1px #ff8a67; */
+    /* font-weight: 700; */
+    font-size: 13pt;
+    color: white;
+    cursor: pointer;
+    font-stretch: expanded;
+}
+
+.custom-file-input:hover::before {
+    border-color: rgb(255, 115, 115);
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.input-upload-detail {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.notes-input-fileName-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.notes-input-fileName {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    width: 25%;
+    padding: 10px 5px;
+    font-size: 15px;
+}
+
+.upload-input-btn:hover {
+    background-color: rgb(255, 77, 32);
+}
+
+.notes-submit-btn {
+    margin-top: 30px;
+    padding: 10px 25px;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: #db4d4d;
+    border-radius: 8px;
+}
+
+.notes-submit-btn:hover {
+    box-shadow: 3px 2px 7px black;
+    color: white;
+}
+
+.upload-input-btn {
+    padding: 9px 27px;
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(1, 255, 170);
+}
+
+.upload-input-btn:hover {
+    cursor: pointer;
+    background-color: rgb(205, 255, 159);
+    color: rgb(78, 78, 78);
+    box-shadow: 2px 1px 6px black;
+}
+
+@media only screen and (max-width: 500px) {
+    .upload-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .upload-btn-choose {
+        margin-left: 25px;
+        padding: 7px 25px;
+        font-size: 13px;
+    }
+
+    .upload-input-btn {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .upload-btn {
+        margin-left: 22px;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .upload-btn-choose {
+        margin-left: 22px;
+        padding: 7px 21px;
+        font-size: 12px;
+    }
+
+    .upload-input-btn {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .upload-btn {
+        margin-left: 13px;
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+    .upload-btn-choose {
+        margin-left: 13px;
+        padding: 7px 17px;
+        font-size: 11px;
+    }
+
+    .upload-input-btn {
+        font-size: 15px;
+    }
+}
+
+.Add-Notes-Box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.Add-Notes-Box {
+    /* border: 2px solid red; */
+    background-color: #fcaf91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 1px 2px 10px grey;
+}
+
+.Add-Notes-Box-para-1 {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 27px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: default;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+}
+
+.Add-Notes-Box-para-1-2 {
+    background-color: grey;
+    padding: 0px 5px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 10px black;
+    color: white;
+    font-size: 15px;
+
+    /* width: 130%; */
+    text-align: center;
+}
