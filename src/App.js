@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router";
 import Home from "./component/Home/Home";
 import Upload from "./component/upload/Upload";
 import List from "./component/List/List";
-import Add from "./component/Add/Add";
+import AddMenu from "./component/Add/Add";
 import AddNote from "./component/Add Note/AddNote";
 import AdminNavbar from "./component/Admin Panel/Admin Navbar/AdminNavbar";
 import AdminLogin from "./component/Admin Panel/Admin Login/AdminLogin";
@@ -23,6 +23,7 @@ import AddStudent from "./component/Add/Add Student/AddStudent";
 import StudentDB from "./component/Add/StudentDB/StudentDB";
 import AddNotes from "./component/Add/Add Notes/AddNotes";
 import AddPYQ from "./component/Add/Add PYQ/AddPYQ";
+import AdminHome from "./component/Add/Admin Home/AdminHome";
 
 const App = () => {
   return (
@@ -31,7 +32,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/upload" element={<Upload />} />
         <Route path="userhome/list" element={<List />} />
-        <Route path="/add" element={<Add />} />
+        {/* <Route path="/adminMenu" element={<AddMenu />} /> */}
+
+        <Route path="/adminHome" element={<AdminHome />} />
         <Route path="/addnote" element={<AddNote />} />
         <Route path="adminnavbar" element={<AdminNavbar />} />
         <Route path="adminlogin" element={<AdminLogin />} />

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.addimg_1{
+    position: absolute;
+    z-index: -1;
+    width: 48%;
+    margin-left: 25%;
+    visibility: hidden;
+}
+
+
+.choose-add-option{
+    /* border: 2px solid black; */
+    display: inline-grid;
+    width: 20%;
+    margin-top: 54px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.choose-add-btn{
+    padding: 10px 28px;
+    /* display: flex; */
+    margin-top: 22px;
+    /* margin-left: 12px; */
+    border: none;
+    /* position: absolute; */
+    border-bottom: 2px solid blue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 3px 6px rgb(60, 60, 255);
+}
+
+.choose-add-btn:hover{
+    background-color: rgb(169, 169, 248);
+    cursor: pointer;
+    box-shadow: 2px 3px 6px rgb(111, 111, 252);
+}
+
+.add-input{
+    padding: 7px 20px;
+    margin-left: 36%;
+    width: 23%;
+    margin-top: 6%;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(255, 99, 27);
+    border-left: 2px solid rgb(255, 99, 27);
+    outline: none;
+    box-shadow: 2px 3px 6px gray;
+}
+
+.add-input:hover{
+    box-shadow: 2px 3px 6px rgb(68, 68, 68);
+}
+
+.add-btn{
+    padding: 7px 25px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(228, 228, 228);
+    border-bottom: 2px solid rgb(255, 211, 16);
+    border-right: 2px solid rgb(255, 211, 16);
+    box-shadow: 2px 3px 6px gray;
+}
+
+
+
+.add-btn:hover{
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 227, 101);
+    box-shadow: 2px 3px 6px rgb(68, 68, 68);
+}
+
+.upload-image{
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 36%;
+    margin-top: 36px;
+}
+
+.add-container{
+    
+}
+
+.add-box{
+    border: 2px solid grey;
+    padding: 35px;
+    width: 19%;
+    height: 10pc;
+    margin-left: 101px;
+    margin-top: 35px;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 5px;
+    display: inline-grid;
+    /* background-color: grey; */
+    /* opacity: 0.8; */
+    /* display: inline-table; */
+}
+
+.add-ct-btn{
+    opacity: 1;
+    border: none;
+    /* padding: 8px 19%; */
+    box-shadow: 2px 1px 6px grey;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: bold; */
+    font-size: 17px;
+    /* margin-left: 80px; */
+}
+
+.add-ct-btn:hover{
+    cursor: pointer;
+    box-shadow: 2px 1px 26px rgb(73, 73, 73);
+    font-weight: bolder;
+    background-color: rgb(253, 223, 87);
+}
+
+.add-para{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.add-box-1{
+    
+}
+
+.add-box-2{
+
+}
+
+.add-box-3{
+
+}
+
+@media only screen and (max-width: 750px){
+    .add-btn{
+        display: flex;
+        margin-left: 37%;
+    }
+
+    .add-input{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .choose-add-option{
+        width: 30%;
+        margin-left: 0px;
+    }
+    .choose-add-btn{
+        margin-top: 22px;
+        font-size: 14px;
+    }
+    .upload-image{
+        width: 45%;
+        margin-left: 45%;
+        margin-top: 74px;
+    }
+    .add-btn{
+    }
+
+    .add-input{
+        margin-top: 145px;
+    }
+}
+
+
+@media only screen and (max-width: 440px){
+    .choose-add-option{
+        width: 39%;
+    margin-left: 0px;
+    }
+    .choose-add-btn{
+        margin-top: 22px;
+        font-size: 13px;
+    }
+
+    .add-btn{
+        
+    }
+
+    .add-input{
+        margin-top: 300px;
+    }
+}
